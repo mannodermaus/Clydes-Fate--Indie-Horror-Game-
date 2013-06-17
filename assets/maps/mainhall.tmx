@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="52" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Main Hall"/>
+ </properties>
+ <tileset firstgid="1" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1889" name="mansion" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/mansion.png" width="611" height="770"/>
+ </tileset>
+ <tileset firstgid="3713" name="shelves" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/shelves.png" width="96" height="256"/>
+ </tileset>
+ <tileset firstgid="3809" name="tools" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/tools.png" width="500" height="500"/>
+ </tileset>
+ <tileset firstgid="4770" name="stuff" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/stuff.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="5794" name="paintings" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/paintings.png" width="512" height="192"/>
+ </tileset>
+ <tileset firstgid="6178" name="furniture_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_2.png" width="512" height="512"/>
+ </tileset>
+ <layer name="floor" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztlLkNwkAUBf+WbiDlJsW4AQMNcJTGk6jA2aw0K00w2dcbaYeqWoV12IShUz+GUziHS8dO2dMe9iA6ZU972IPolD3tYQ+iU/a0hz2ITtnTHvYg+LZV7cI+HBpnz6V+ze1juIWpcfZd6nNuv4dHeHbc45Xb3+ETvh338L9iO2VPe9iD6JQ97WEPolP2tIc9iE7Z0x72IDplT3vYg+iUPe3xdx/r/QDVtUpC
+  </data>
+ </layer>
+ <layer name="floor" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztlk1Kw1AUhV8GCi5AB1mJLsGuwHYHdgXWDRh1AaY6UvDfiYKaWicKOvcXnQjdiSeQwvNBXm6b8NJnzwcfl7TNeb05g1YpQgghhBBCCCHTSAQ3sukLi6FSS+Hf12K4k01fWMEOTWMPH/tYww6df9BHjB26xh6+dZGSYIeesYdvXaR8YYfvsPhzOsnc6Of0LfdUnSflZ4yMgeWeqvOk7AdKHcBNuAW3YaRdR8Z7h/AocJcn5RIZV7ALd+EejLXr2HjvGt5Yzq06Twr7cJMnhX24yZPCPtzkSXlAxuMIz+8JPlvOrTpPygsyXuEbfBfMD/hpObfqPCkzcHYCZmobrubMIubhwgTM1HXYyZlFLMNGNl130NDOL0sTtrLpuoOWdn5Z2Af7YB/51P27MZxlqft3YzjLMs7zO8b/iBN4Cs+0eQ4vAn/6uMV3TWAP3mmzD++DevogZJr5BTW/9d8=
+  </data>
+ </layer>
+ <layer name="walls" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztmUFOwzAQRR2JKzSg3KOBizT0Ik3LIYAtLIATAFu6gF6jvQ0/0ow0WC4xciSPyzxpNIvI1tjSn2/HzhmGYRhamJ05d46oI/MF5dxz+8wx7hLRRuYryrnn9llg3DWii8xLyrnn9llh3BrRR+YN5dxznxoz0pU2/lrXnHSljd/qkn2NWZCutMF1cc2yd8u+xqxIV9rgurhm2btlX6uV6sKHdSJ7t+xr7QS6iPHp1L1incjeLekm0EWMT6fuFevktnLuDnFf/fzeT6CLGJ9O3SvWyRPqf0a8BNaR6pkxPp26V5vGuRvEK+p/Q7xX42M08oA1PCI+Uf8XYlfoOj6whm1zXB+lsMcaDs1xfZRG6fpgSteHYRjGlITO7yXcbXxC53eNd/4xQud3jXf+MULnd413fsMwToOa/j3m8jD20pS3qIGW/j3m8jD20pS3qIGO/j3m8jD20pS3qIGe/j3m8jD20v/8FmUYhqGVb4qvZDw=
+  </data>
+ </layer>
+ <layer name="items" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJzt1klPE3EcxvHfSWsIxFablOXkGreLAi2auAsCelEW0YLiclDBJRGj0RhZjIKiRlpMNAEKhrZEwIMm4HJTloTFgyb6BtyXt+DXBJMqba2dqXTI/0k+l/800+fJZNKKqKioqKioTJ/sNonsgROlKDNFfy+nhXtYfj/zJIm0owP3cBlXUI+GJG3dA3OR3tWoQS3qNOw4x4bzEzvsZhEHvHT1wY8uNOI6buCmjjs66e2FD350adhxhw13J3YUsaEY3XTtQS8eoAkuuNGs444Reo9iDON4qWFHYKrYcNqsz73+TEuiSCva4EE7OhJj812xzHM6v8AABjGEYZ13LEoWWZw8+XyJVWQplmE5Vlij/45PdP6ML/iKb/iu845sNuQE2ZFL7zzkYxu2a9gxm/fKDAvmYC6sOr5rPxPqeRym9xEcRQUqNezIpLMdDmRhNdbovCPU86indwOu4hoaNexw0rkUZdiLfSjXsCM9RSQjJbLP+undg17cR3fAjnmpIvOxAAvRCS988KdG3+9XHHTMCtOzgGuFEe4YpvcYxjGC0YAdG+m6CZuxBQMYxBCGddixi44lYXqe4lpVhDvCZT9dD+AgDuEd3uMDPuqw429xscGtw44autaiDpcwI01kJkyYlab9/mfoeDZMz4dce6TDjlinj479YXq+4tprA+x4Q8e3BugZT9nBe7ETBShEEYr/wzuuoqKioqIy1VlrE1lnm3y+nrMNQc7jNWV0Xclv9yqkIwOZsKPcQDsu2EL/L6k20I4WurYG6dvGmcdAO1TiL9kJIjnYilzkIT9hqlv9eyroXIljOI4TOGnAHbfo3AQX3GjGbQPu6KNzPx7jCZ7imQF3qKioqKhM7/wAV7+Dfw==
+  </data>
+ </layer>
+ <layer name="items" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztmLsuBGEYhl/dbmJGMGumJOhJiMMdoCGhZPcSSOgIPRISOhq1Q3ADFA6FQ4mO2u66AodXRKIYlf8bfnmf5Emm+uZ92h8QQgjxl9iOgR26S/dit7dnI2Au+vg+yQGn9Ixu5dz+550Lbr+kV/TacccGGzZTOs4NOsrcXqFV+uS44yuP3F6mFVo16KhNgICGtC5xf/+T+jzQQBtplLf7jzU93N5L+2i/xx3j3D5Bi7Tkccd3LAbAEl0OfnvJz9jn/gN66HnHDfff0ruMOjoKQGfB/d1n7n+hrxl1DLNhxKCjNQTaaHvo/nYak2yYMugY4P5BOpRRxwobVg06hBBCCCHE/+OoCTimXTHQbfhmZM09Gx7oKBvGPO4At9fQaTrjaUcxAZq5vYWu0XVaMnzHs2I+ZfOChx1CCCGEEEIId7wBtjc0VQ==
+  </data>
+ </layer>
+ <layer name="clickables" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAvgYooAAB
+  </data>
+ </layer>
+ <layer name="hero" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAvgYooAAB
+  </data>
+ </layer>
+ <layer name="items" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztzzEOgkAUhOHXUlBScQKEQgThDKCF3ETPoZeBysS7kHgT5wQkgEvC5v+SKd/sjhkAAACwP8/Q7BW6608is4OSKlnk7p1eGwaHOxr9vVUuytXhjq0dtSX3YM9NGzoPdty14eHBDgD79Q7m33x0c4rNCqVUzkql1PHyvrXGBR3fiZt/9wEAAAAAAADAXD+UkRAV
+  </data>
+ </layer>
+ <layer name="overhead map" width="50" height="52">
+  <data encoding="base64" compression="zlib">
+   eJztWW0KwjAMHeyQehO9yNSLOLyI4EU2/WkFi3FE1+VjbUMePPqvSfPSNMv6tml6p9PprJj7wDHw/uaYuO4S916y55K9p7wEUnBV3PtMOMdN0ZZmjNa0pRkja3rE+/0oUI9hwX2n2ojQ1CMCi9XYftc1DRsasZrW7qkPtejxb4+BcS+gDW09JPxMsRG1/rVq++BwOGziEGrHMfBUYQ3p2o//UjU9B7C3agvOVqJGHeLfJuHNLU0jyjeURB8E4xfJ0ZfyDSWhB2aXE5dcemB2pePievDs1qhH/JaGPTunX8+lhzRy6SEN18POOazkFewdc/SMsLdJ7QlLzDFOLpWUY5xcgowz6xdzzJzgLIzyL8raPfe6Kw/Xw845rOQVNguaW1PefWyGM7dKvefUs2N+re2T00nlEzv0gU8=
+  </data>
+ </layer>
+ <layer name="paralax" width="50" height="52">
+  <properties>
+   <property name="factor" value="1.15"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztz9ENglAURMFbxkOwDC0etRHURlQStwcS8SUzyfnfrQIAAAAAAIB+nVrVue29Yjs//sec/Zd0TbeOvyzZfk+P9Oz4xyvb3+mT1o5/HIaqMU3pOOy9BgDgN76t7g4O
+  </data>
+ </layer>
+ <layer name="collision" width="50" height="52" visible="0" opacity="0.79">
+  <data encoding="base64" compression="zlib">
+   eJztlFEKgDAMQ3sj7387f4uotFu7ruMF8qFIkofTS0QujDHGGOMmlqRMrez9XkVxzGRXckRmR/RW5UWfg5043nKqOUbYunI8n/Hkr/re/jZ6My190Rye7ozM7hw6dwWD7tPXXWT5t+yuirOboex/pLVn1W444IADDjjggOMsjhFVZGZ2Wu97MqvezYwit8MxLzjgyBAc9du/BMdZHBnsFZswHvEN0IEg2w==
+  </data>
+ </layer>
+ <objectgroup name="objects" width="50" height="52">
+  <object name="tp_outside" type="teleport" x="336" y="784" width="128" height="48">
+   <properties>
+    <property name="func" value="mainhall_tpoutside"/>
+    <property name="target" value="outside"/>
+    <property name="x" value="3"/>
+    <property name="y" value="3"/>
+   </properties>
+  </object>
+  <object name="painting_right" type="object" x="496" y="112" width="32" height="32">
+   <properties>
+    <property name="func" value="mainhall_paintingr"/>
+   </properties>
+  </object>
+  <object name="painting_left" type="object" x="128" y="112" width="64" height="64">
+   <properties>
+    <property name="func" value="mainhall_paintingl"/>
+   </properties>
+  </object>
+  <object name="piano" type="object" x="224" y="240" width="64" height="64">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="mainhall_piano"/>
+   </properties>
+  </object>
+  <object name="paintings_down" type="object" x="368" y="512" width="64" height="64">
+   <properties>
+    <property name="func" value="mainhall_paintingd"/>
+   </properties>
+  </object>
+  <object name="closetr" type="object" x="224" y="144" width="32" height="48">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="mainhall_closetr"/>
+   </properties>
+  </object>
+  <object name="bookshelf" type="object" x="256" y="144" width="64" height="48">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="mainhall_bookshelf"/>
+   </properties>
+  </object>
+  <object name="closetl" type="object" x="192" y="144" width="32" height="48">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="mainhall_closetl"/>
+   </properties>
+  </object>
+  <object name="entrance_note" type="object" x="432" y="720" width="32" height="32">
+   <properties>
+    <property name="func" value="mainhall_entrancenote"/>
+    <property name="image" value="note.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="50" height="52">
+  <object name="tp_rightwing" type="teleport" x="752" y="288" width="32" height="80">
+   <properties>
+    <property name="target" value="rightwing"/>
+    <property name="x" value="3"/>
+    <property name="y" value="55"/>
+   </properties>
+  </object>
+  <object name="tp_leftwing" type="teleport" x="16" y="288" width="32" height="80">
+   <properties>
+    <property name="target" value="leftwing"/>
+    <property name="x" value="27"/>
+    <property name="y" value="50"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

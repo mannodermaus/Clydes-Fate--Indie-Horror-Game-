@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="40" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Master Bedroom"/>
+ </properties>
+ <tileset firstgid="1" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1377" name="school_1" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/school_1.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="1889" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="2401" name="library" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/library.png" width="500" height="715"/>
+ </tileset>
+ <tileset firstgid="3765" name="redpaint" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/redpaint.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="4021" name="furniture_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="5045" name="bloodythings" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/bloodythings.png" width="512" height="512"/>
+ </tileset>
+ <layer name="floor" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1UkKwjAYQOHsXObUzl7AYesADndyuEDVA/g2gaIbSxGb8BaP8i8KCR9Jql4Id3rQk6oG85kudKXbn+c2/zbZ86/nNv/qoYceeuihhx56lO4xjCGMaEwTmtIs5uexZ80HOtKJlrSK+Xmkec7aF7V95OZRyvnwvtJDDz265tHnTRjEz/c7N48ta97Rmja17zfvd5c83ue0j7S/XDxKOR/eV3rooYceeuihhx7d9XgB5/FU0g==
+  </data>
+ </layer>
+ <layer name="walls" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztlksKwzAMRL3JWZ1+7uH+7pG26T3S36EqgwdMlsWD4zAPBqGNQAtpxjkhlovvnOuTNqataUfoUfcdZ49gcw9JR9PJdCb0qBfSHoPNvSbdTHfTSOhRH6Q9Jpv7THqZ3qYPoUf9kvZYOn12W63i053htlg/gk2Y7cH6EWzwg9g/gg1+0Bp/RO7bbG9lkvt2y3eT+3bLd5P79hrvRgghWiR6vi/g98gOtTJD9PxQwO+RHWplhuj5QwG/R3aolRmi508F/B7ZQZlBCCGEEEL8yw+CWHsF
+  </data>
+ </layer>
+ <layer name="items" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2LdKQ1EAxvEDdjAYNfaKGs2mm7Es9kewDvZXMBawP4OxYH8Ju6sFdI19sEUFXez1L8QhDmrEcO/B88Fvu4f7fSGFGyFUVPQfv1Ah/BGAwNCfn9swCrFp9F4vT2OmezoyYPFgxyUbrlw7csKEyEUe8pENa5h3+v51QthsdO2upHMVqlGDclRIsiOTDVmuHa10bkM7OtACG67DhbjBLe7Cte37kwzSeQjDGMEA7IgwCRGJKESbtG4pT7J5f1g9+IzrLTN838yinA0VEu9wsGELLWywSbzjIwNssEuwY4XXfBVrWNfRb7CncdL9DOe4kHiHioqKioqKytdZ4LlnEUtY/uUz6QznZjGHeY2ea3e57x72cfDLDg7ObWEbOxrteOa+L3h9v/+nZ+nDYCGOcIwTnMKJs2D36+45+4BHPGm0I4HuiUhC8qcdPgYhfOEHfwQgEEEG9+tiOBeLOMTr8H+FFPqmIg1mpCMDFsP3Z/WUAvoWogjFKEEpyiTbUUvfOtSjAY1oQrNkOzrp24Vu9KAXfeiXbMcofccwjglMYgrTku1QUVFR+c95A+SkUfI=
+  </data>
+ </layer>
+ <layer name="items" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1MlPE2EAxuFPDwRa0gItEYHIZmRJFDiwHUS9UDgocFBRWY9uLEeQ9e9RuOGWKFDjAlIIEAVJFIGA7JywhQTxR5grdaYMMCPfmzwhpczM+zKdCiEjczLSGSREV9Bxtzh4PGwY+g92yBg7PQ4hetEHtyOwc2RY9n5mWvTr9ZRzPUMnulScd4ruPzGNGXidQvic2q5ZrFynRMOOcZ7RCT/P6QDn+oxBeFScd2f3HtD7FE7jTKQQUZHq+wQaLxt8fnYs0n0Jy1hRsSOO7vFIQCJy2JB7BDv+lWCrECGwwGpVf1wW3bNxG2Uad9yxC3EX91Bu13bsfkmmewpSkaZhx0263wrwPtyn+wM8xCOddhTQ3YVCFGnYcZA00r0JT9Cs046jzgV6JyMFqRo39Nr4vocb72yH009tsumeg1zk7bPDxu/tCEM4IuCAEyP0H8WYnx3dvPccL/ASr/Ba590FdHGhEEUIRggssCIU5xCHeCQgEUk4j2n6zGAWF3l9CenIQKbyf3nPex/wEZ/Qj4FDvn9RXPssohGDWA2ftcv8bT6u4CquKcd+ofNXjGMC3zB5zJ9Df7lO7xsoRglKlR1zdJ7HLyxgEUsG3lFB70pUoRo1yo4NOv+GFz5sYsvAOx7TuxZ1qEeDSb/DW+jdija0o8OkO2SMmzc8x2/RY+DnWU089B/CsMl3fKf/D0yZfMcq/dewbvId2/T/gx2T75CRkZGRkZHRN38BXZtsuQ==
+  </data>
+ </layer>
+ <layer name="items" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztz7kNwmAQBeGNLLALQaIQjmI4CgFMH5x1cBRioAgmJDFISGD/0nzSRJu8jZAkSf80ySOmNKN53vSaemUWsc7q7wu2L2lFZYv/OPDD8c0fG7ZvaUf7Fv/xyYntZ7rQNeE/Krbf6E6PhP/oFBFdyqkoml7zvR7bhzSifsJ/DF62jxP+Q5IkSZIkSb/3BF5ZEtw=
+  </data>
+ </layer>
+ <layer name="clickables" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQEBAAAAgJD+r+4ICgAAAAAAAAAYH0AAAQ==
+  </data>
+ </layer>
+ <layer name="hero" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQEBAAAAgJD+r+4ICgAAAAAAAAAYH0AAAQ==
+  </data>
+ </layer>
+ <layer name="items" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztz7kNgEAQBMG1L1eeQHgC4QkEiZxYEwcHBx2qktqfiQDgSVMi2qzL+vL1mveG3D5mUzZX/GPJ7Wu2ZXvFP47b9rPiHwAAAAAA8DcXt0IIxg==
+  </data>
+ </layer>
+ <layer name="overhead map" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztlwsKwjAMhgvpCeZJHF5E8CR6UnUXmXoAW1CYXV+2aRo0P/wEBh1Nv/SRUSs1in/KD1DqaOJJ08Y74OaxM+6hLTKPQ6c89sh5CI865fKw+3e5t0L7ijMPm8MNPsfN4M+FM4/QGvvWgDOP0BpzyqOGh29sr7qq4THD+l519xGVanhwUg0PThIevCQ8eCmHx2TO0sHEjV5H37dYvBSey2eI//uK3Ee1qlHsd3mtS2sUu0/61u57v/S+d98O2P14q/VPibrOWp3Z1HUmPOISHrzyoObRqq6Eh/BoIeHx3zymRN9gvexJUn3GO1L3G7m5Dq85cpyfWGz9BJHBCuQ=
+  </data>
+ </layer>
+ <layer name="collision" width="50" height="40" visible="0" opacity="0.7">
+  <data encoding="base64" compression="zlib">
+   eJzt0kEKACEMQ1F3Ht8re4JCqxUb/YHsRsxjHL21QSmlVK6ZUXJEzll3nXZ4NlZ2RP7Rjw6vr/q72nVEzq5u8NzxisP6FkeeIyM7jkrBUSteR2ZVduLQd9zehEPvHa04FFyqjhPBgQMHDhzvOyLW2zsotToB9wIp8g==
+  </data>
+ </layer>
+ <objectgroup name="objects" width="50" height="40">
+  <object name="tpatrium" type="teleport" x="496" y="592" width="32" height="32">
+   <properties>
+    <property name="sound" value="doormove6"/>
+    <property name="target" value="atrium"/>
+    <property name="x" value="24"/>
+    <property name="y" value="8"/>
+   </properties>
+  </object>
+  <object name="ceilingdoor" type="object" x="128" y="112" width="48" height="32">
+   <properties>
+    <property name="func" value="masterroom_ceilingdoor"/>
+   </properties>
+  </object>
+  <object name="message" type="object" x="512" y="256" width="96" height="80">
+   <properties>
+    <property name="func" value="masterroom_message"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="50" height="40"/>
+</map>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="56" height="40" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Upper Level Hallway L"/>
+ </properties>
+ <tileset firstgid="1" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1889" name="mansion" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/mansion.png" width="611" height="770"/>
+ </tileset>
+ <tileset firstgid="3713" name="furniture_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="4737" name="tools" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/tools.png" width="500" height="500"/>
+ </tileset>
+ <tileset firstgid="5698" name="paintings" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/paintings.png" width="512" height="256"/>
+ </tileset>
+ <layer name="floor" width="56" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztll0KwyAQhL1Pc4Pkes0Nmqvk53TdF6GUEtE6jivzwTL4ELL6bTAhCCGEGImH1cRuAshstbCbANKTv9hLzYz+cp5DEXth578gPCGyFLafVh6/YftCf4e1z/+zVw/+cplDX/cf4jw93X8ljO6vJ1j/Fa2QP9/sVofVaXX9WJfQk/uX1XaT3nlarTfpnZS/1P5rJYrUe1P7r5Uo5G9sf95pNX+s+Ww1f6w5YXuTPyGEELm8AcxL5MI=
+  </data>
+ </layer>
+ <layer name="walls" width="56" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmGEKgzAMhfunh9vqRaZeZLqLqDvkIqRYZa3t0loY74PwhKwk5YVCphQAIJW7Vsro2l2U40F36//gfje9eWX4u6F4Urz0Pu9Tw2eu6PGoZ3VXn1qKjqNl3yaKt97nfdoV9jrUw1nd1aeBYuQY2LdveZ+OhzNSXL/sLPlqh2asYZ9mioVjZt8sbt6nC5+xdaS4fvU63ENoxnLPlK0jxfUrZi58/uacKbeOlOngT8rvXY05+0tfAAAAAAAgTMyOKtWS++0ZMTuqVGv+lxGzo0o19y6SQsyOKtXcuwjYwPuC9wXvS737AQAAAOBaPnxit0E=
+  </data>
+ </layer>
+ <layer name="items" width="56" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztl8tOE2EYQL9EbGmnKaYN7QOgLrwk8AxQVNYKq2prW3deFigbEYq+gYAL0ps8ALDk8gIoQQW3XhZgVFAiutV4Esa01Glpwlw6zX+Sk0z+mU6+k2n+zIgoFArFYba8Ittep6ewDn+7iNZufO5Nh8gGbuLbDnvnMotu2noq+k6ERNpCB8c/aNrHn/jLpX3VdNF2OuT0FNbRS1uf3rfKM3uBL3HNpucXD4tcxwQm8SamwubdP0VbWu/7QtNX3MFdm/oe0jKKYziOWZwwsc9pZmjJYR4LWMQSvguKvA8a/6beObfwm/n/1Giod06hUDjHJ03ks+b0FNYRCIgEA05PoVAo3E48yrs53sAEJqP/X3M1InINB3EoYu98J0+JePAS+/llvIIDWnn9KEbpeYRjOI5Zg75hmu7jAxyp6OvrFIlhf6d5PdWcoeEs3qbpDt7Fe1p5/Shy9OSxgEUsGfRN0jSF0/isoi9FVxozNvQ9pWkSp3DaoG+O77d5XDDxO3yCrsf4xMK+GA39uEjTEi7jilZe/8c6Xa/wtYl9Jbqe46yFfRkabhn8D6vXv9H1Hfeq+pp9fzkuzb6/HJdm318axa37S6O4dX9plFr7i0Lkg698/NFX+zo30ubnXU/Xo+v1Oz2VeZyj5bzuBd2LLdTX6s+v1fsUtfkLfPp1EQ==
+  </data>
+ </layer>
+ <layer name="items" width="56" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0kENgDAQRNFV0AP+L+AB7qABBIAFEEBFlDRs3lMwP5kIAAAAAFoZS8RUeq/4zlrbtsR9Z227EvcBfSxD7wXfOhL33bXtSdzHv83Jv7kn7wOgvRdwEgpF
+  </data>
+ </layer>
+ <layer name="clickables" width="56" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAODXACMAAAE=
+  </data>
+ </layer>
+ <layer name="hero" width="56" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAODXACMAAAE=
+  </data>
+ </layer>
+ <layer name="items" width="56" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztz7kNgEAMBECnl9B/AnXwCErh6YTLIDkEGaCZyNY68EYAADxTVxFN9Tz7ijH/PxU6XGUAAAAAwD1tiujSsfd5HlL5/mvm3GU59VnzvP2oH8Ab7cGQDIk=
+  </data>
+ </layer>
+ <layer name="overhead map" width="56" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmFEOgjAQRBtDP028iMqZuJC9iV4E9SImHsGaSOwHhV2ZhS3uJJP9IA1d3wB1m41zjdkM9KVy7uidO0Sfq+X3g/Yz9tTpUXB/Kae01v7b377neq5KsH7v8df7ppwQkmBN2WPuvjs/vpajrcczqwl7zGWMspYjVE7RuUJrak7RuUJrak6N37IyfsMOcf01+hZ9V9Rr+9nTCfgd1MRS4vtOeRbbhDelppngrEVy4/Dj/q6aztcUftz3WRBmsjQ/TZbgp8nGb/39WT712vitnx9nBjalSszP7Hw9nySec+M3n4yf8fs3fqFnToCsQ/Orbnah5b8wOv8ln/so+S/53IfiZypbLwklSoA=
+  </data>
+ </layer>
+ <layer name="collision" width="56" height="40" visible="0" opacity="0.75">
+  <data encoding="base64" compression="zlib">
+   eJztlEsOgCAMBbkR97+dKxIXGopQHq0zyWz8dtBQSykVERExiA31HPTZOnrcr9+9FtbZZvosKPpWfsMe6v9q5NwMO/sUqPYIb1T7yy5UfTPP9JqZPt++k6QvtvTlMGsXfTmkL6Y91PPRR5+FL/eMPlfZ50X0vqd3vB2j70wztfyxb9W6QCwulpU0gA==
+  </data>
+ </layer>
+ <objectgroup name="objects" width="56" height="40">
+  <object name="tpatrium" type="teleport" x="848" y="176" width="32" height="48">
+   <properties>
+    <property name="sound" value="doormove2"/>
+    <property name="target" value="atrium"/>
+    <property name="x" value="3"/>
+    <property name="y" value="27"/>
+   </properties>
+  </object>
+  <object name="tpmirrorhall" type="teleport" x="608" y="64" width="32" height="48">
+   <properties>
+    <property name="func" value="lefthallway_tpmirrorhall"/>
+    <property name="sound" value="doormove6"/>
+    <property name="target" value="mirrorhall"/>
+    <property name="x" value="20"/>
+    <property name="y" value="37"/>
+   </properties>
+  </object>
+  <object name="tpabandonedchamber" type="teleport" x="608" y="288" width="32" height="32">
+   <properties>
+    <property name="sound" value="doormove3"/>
+    <property name="target" value="abandonedchamber"/>
+    <property name="x" value="17"/>
+    <property name="y" value="8"/>
+   </properties>
+  </object>
+  <object name="tpupperbalcony" type="teleport" x="192" y="176" width="32" height="48">
+   <properties>
+    <property name="func" value="lefthallway_tpupperbalcony"/>
+    <property name="sound" value="doormove6"/>
+    <property name="target" value="upperbalcony"/>
+    <property name="x" value="3"/>
+    <property name="y" value="27"/>
+   </properties>
+  </object>
+  <object name="switch1" type="object" x="416" y="144" width="16" height="32">
+   <properties>
+    <property name="func" value="lefthallway_switch1"/>
+    <property name="image" value="switch_mid.png"/>
+   </properties>
+  </object>
+  <object name="switch2" type="object" x="432" y="144" width="16" height="32">
+   <properties>
+    <property name="func" value="lefthallway_switch2"/>
+    <property name="image" value="switch_mid.png"/>
+   </properties>
+  </object>
+  <object name="switch3" type="object" x="448" y="144" width="16" height="32">
+   <properties>
+    <property name="func" value="lefthallway_switch3"/>
+    <property name="image" value="switch_mid.png"/>
+   </properties>
+  </object>
+  <object name="switch4" type="object" x="464" y="144" width="16" height="32">
+   <properties>
+    <property name="func" value="lefthallway_switch4"/>
+    <property name="image" value="switch_mid.png"/>
+   </properties>
+  </object>
+  <object name="switch5" type="object" x="480" y="144" width="16" height="32">
+   <properties>
+    <property name="func" value="lefthallway_switch5"/>
+    <property name="image" value="switch_mid.png"/>
+   </properties>
+  </object>
+  <object name="familyportrait" type="object" x="528" y="432" width="80" height="48">
+   <properties>
+    <property name="func" value="lefthallway_familyportrait"/>
+   </properties>
+  </object>
+  <object name="INIT" type="init" x="832" y="32" width="48" height="48">
+   <properties>
+    <property name="func" value="init_lefthallway"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="56" height="40">
+  <object name="tplwing" type="teleport" x="672" y="560" width="64" height="32">
+   <properties>
+    <property name="target" value="leftwing"/>
+    <property name="x" value="9"/>
+    <property name="y" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

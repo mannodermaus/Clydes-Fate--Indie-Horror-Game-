@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="72" height="37" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Upper Level Hallway R"/>
+ </properties>
+ <tileset firstgid="1" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1889" name="mansion" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/mansion.png" width="611" height="770"/>
+ </tileset>
+ <tileset firstgid="3713" name="paintings" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/paintings.png" width="512" height="192"/>
+ </tileset>
+ <tileset firstgid="4097" name="doors" tilewidth="16" tileheight="16">
+  <tileoffset x="4" y="4"/>
+  <image source="../graphics/tiles/doors.png" width="471" height="483"/>
+ </tileset>
+ <tileset firstgid="4967" name="doors" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/doors.png" width="471" height="483"/>
+ </tileset>
+ <tileset firstgid="5837" name="furniture_1" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_1.png" width="605" height="1023"/>
+ </tileset>
+ <tileset firstgid="8168" name="stuff" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/stuff.png" width="512" height="512"/>
+ </tileset>
+ <layer name="floor" width="72" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztmLlOw0AURceSMUqQWJQO/oClY5HgF1hb8hckgAQNFKRkKUCsJaGAhIo0QNhb+AYKEIsEooCaO4onGSZ2iAiOnx2PdHXnJY7tue84jsNYbuxDB1AKSgd1vhbjGDqBTqFsUOdrMaj0i1otBpV+OVHHIozFI97hZ9FgbMmo3vGWkc1KxDv8pJHNoVG946WQTdphfo6gzD/18xbZ3BnO7V+tM+b+7d5fgBIWbsXPLpR02N+Qzbvh/HFUf9AYe9QK6xf1KuZrrNiTUj4iT9FHP7oVJ3bzhPk5MarJj1tuxYndPODnd5f5odBfN/gp5TI/FPpLmR/1/k+h35T4sfu9Uwv+iXv8l1bsFPmh8LxWzu9nt/rp9vN6uc9f5fSbQn8p80OhvwE/AT+UazECfv6fn8sQY1fQtek3UKvOWJteufuBnyfk8Qy9mP4K9WNtA3ppF/NS2/mBn8ZwIZ8mzFugcawtqv90sWZRi/eiyuuy+4GfbiWfV/M6U3kQGcncqBnZccTPh1+3XuTnXivm5yX0c/0qR7LkjKy2587Ph+fuRX4+tFwuXM1mPtyjSg4yM6qiejEzaj/5fr3ID8+Hb9+D8++F+sKF+Yz+d80q3z98v17kh19fat6DDYwNQcPQCDQKjUFzWON8uHL3Ij9y3hPIIgbFoUloCpqGkljbXrhy9xI/Vv/XrCOLDWgT2oK2oZ0a5cfq/5ossjiDzqEL6BK68iE/btU6MqiDDMnrCd6/3KrbkUUH1Cl5F4H7F5Vhx08wcsOOH7fGN68PW2o=
+  </data>
+ </layer>
+ <layer name="walls" width="72" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztlklOw0AQRXuBLcVZAGLYcA5AEE5CAAPXQIwSwwbIBYADQAIXABZMAYmZSzBk2DGs+FYcpR27OorUlmO5nvRUlrpdKn+14wjBMOGzYwqxa8azv67e04YQNpwJqAX0Pzbp9W2zMQdVc4r7dfQPus+WelPrQb1z7n6ZRcXeB/ho0ut5szEHVU8U9+vor7O3M+tSUz57Br23DCuKXvfSHFR9Utyvo7/O3s6s+035nBr03jrUekmag6pVxSw6+uvs7cx6JuXjvIc5xd46rdZbEWb/MHsvG7WzxgRzYHjPIuPl3GjvPWEYhmEYJn5MpmmzcCod9YTRspKmXYVrCc9HPifUdZKRzwl1nWT494dhOoOiJcQtvLOinqSzuEYeN5Y3n4tUzUuN9QoOdUX9tO3zhTxKsAwrsOqen3c8z0dKX/2EmRjm49CH71g/HICD7jetGzn1WPpqL8zGNJ8xZDIOM3DCzWcYzzNi6aujcCGm+djIZBbOwXn+T+RjHZlswE24xfn4OEQmRzAPC5yPj2dk8gJf4Rvn4+MbmfzAX/jH+TAM0wb/cV5DnQ==
+  </data>
+ </layer>
+ <layer name="items" width="72" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztl0lPU1EYQL8Fhqeh7QJl44LXoImCbhBdKD8AUNcqOC3BYYW6Ei1QCaAQXeuCQsEB4TdYRFAiOPwCUdyYiK6dT0NNeTf6Bijzd5KT+y5t7rv30JemIoqirDSNhSKXCt3f0xwRacFWjEfm/raZcUvEe/3L+SJX8he/z3/hZ++L5Tbr3/G4R4IOvdiHyUyT3YylPvrcpc09H30mwyJT4bnrLsbusPP1WJT/UzTY3neVsE8sxTLcg3tLvPcynyHWH/bok6LDCD7F0UyTasYao0+tJVKHJ/EUnsYUbUYyfc4wP2tlx/l8psdspskQ47DRp4c2CaOP196raFGNNXgYj+BRn316tjvnswUiX/BrgfM6zTQd3uMHnHH5zMQ4czO2YCvGjQY3mLdZ2TEIT2iTiv7/dfM8aepp0YDn8DxewIs++zwz1tsaEtmGRSHndRAGOPN9fIAP8ZHRYJD5Yys7BuEdbaZd+pjnSdNOiw7sxJt4C7t89vlkrHeQFoewMuS8DsJLzjyJU/gKXxsN3jB/a2XHXGKe5y/lxSL7sAL344Hi3N53rXOMHsfxBNZinfZxcJUeTXgNr2NM+zhI0KMX+zCJ/R594jbfH/Zy7Gx1MEaPcXyOL3DCo0/SpqEd/D7fWPc7/sCf+At/5/CzutTr+2XU5rvQXv77rhVmbJGP9krvYvWy0Odro6DPlzv6fLmTx2+YTS6/YzY6O2izU/soiqIoiqIoiqIoiqIo65w/gmF+7w==
+  </data>
+ </layer>
+ <layer name="clickables" width="72" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAeBopoAAB
+  </data>
+ </layer>
+ <layer name="hero" width="72" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAeBopoAAB
+  </data>
+ </layer>
+ <layer name="over hero" width="72" height="37">
+  <data encoding="base64" compression="zlib">
+   eJzt2LsOAUEYxfGvXVoaihUeg4I34V14F4kXcOmpeQCXHqXC/UgkJC7V2hm7/19ymslm8uVktpgxA4Dfq1fMGhXXU/irqW5a9AMAQGq1S2adkuspkmcfmh2Uo3JSzsol/J/9EQ3+r+/2ZZ3jsusp/FXQPa3IXQ0AAABAzLpZ1xP4aZwxm2RcT+GvtbrZKNt7RzvO0YueOskp+Zi6ub0fvouvb4pT9TJTqkotgo76gdlAGQaPtVHw+fu0mauLhbJ86mRFP0AiXQH5kTCi
+  </data>
+ </layer>
+ <layer name="overhead map" width="72" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztmG0OgyAMhvmx8U+3i7jsIiZeZB83dTdxJzCDZSYVEXAgBW2TN81iVrA8ryL9gbGe5KX3kbE7Z+wh1B3zqr/23KUaUXuIms/PYZiHKevmGKq+T22XenPzeIIxbpbrtrD936d+6NqV0s/rgvvcQ6i8NdSfUUB+pLeW+GQPAfkhb00D8kPemgbxYw7ixxw19ccYkJ+XeH+V4vdJ6Ey9+oZuv53zs6j4rW8JMlzrQrlmY0HdPy/1mm48rCzVCg9c+FhwrWs+vQ59o+Z25nvWlZ9KM15qgvev659NPvzo1mNr2jo/a/SH+CF+iB98fnTncd0f74iU5cPPHjwXev+8Nc+F5kfnOd+M6dtcvr+wfBuan7UCy7fED/FD/MTtj+lMBOaY54wp8eOqmJylxI+rYj6ncuTH1Yeu2XYWnFt/QsvkV2x+MMZWZeoPNj/YvZEyPc+w+PkABGyBxA==
+  </data>
+ </layer>
+ <layer name="collision" width="72" height="37" visible="0" opacity="0.93">
+  <data encoding="base64" compression="zlib">
+   eJzt1ksOhSAMhWF2xP5358g4IU0p9CH8JzkjYy3fvTH21lqnlFJKD+2bP8733l3zDG0850f4jJ45s4P1HNL1nVn9LckXfORgIwcfOZb39U3x8PF2lubv/nZY9dnxPRFRz31P8ImwxwcffPCp4IIPPvjggw8+VatN9p7VfW51ssR6n3Z2pWp3jkq2R/R/bTbZZ6zulH22KkajGdlnqlZ88DmlDwLbZSc=
+  </data>
+ </layer>
+ <objectgroup name="objects" width="72" height="37">
+  <object name="tp_bedroom" type="teleport" x="912" y="48" width="32" height="48">
+   <properties>
+    <property name="sound" value="doormove1"/>
+    <property name="target" value="bedroom"/>
+    <property name="x" value="11"/>
+    <property name="y" value="22"/>
+   </properties>
+  </object>
+  <object name="tp_study" type="teleport" x="544" y="48" width="32" height="48">
+   <properties>
+    <property name="func" value="righthallway_tp_study"/>
+    <property name="sound" value="doormove1"/>
+    <property name="target" value="study"/>
+    <property name="x" value="11"/>
+    <property name="y" value="20"/>
+   </properties>
+  </object>
+  <object name="tp_guestroom" type="teleport" x="160" y="48" width="32" height="48">
+   <properties>
+    <property name="func" value="righthallway_tp_guestroom"/>
+    <property name="sound" value="doormove2"/>
+    <property name="target" value="guestroom"/>
+    <property name="x" value="15"/>
+    <property name="y" value="32"/>
+   </properties>
+  </object>
+  <object name="INIT" type="init" x="800" y="304" width="48" height="48">
+   <properties>
+    <property name="func" value="init_righthallway"/>
+   </properties>
+  </object>
+  <object name="world_map" type="object" x="1072" y="48" width="32" height="32">
+   <properties>
+    <property name="func" value="righthallway_worldmap"/>
+   </properties>
+  </object>
+  <object name="tp_storageroom" type="teleport" x="912" y="256" width="32" height="32">
+   <properties>
+    <property name="func" value="righthallway_tp_storageroom"/>
+    <property name="sound" value="doormove3"/>
+    <property name="target" value="storageroom"/>
+    <property name="x" value="20"/>
+    <property name="y" value="10"/>
+   </properties>
+  </object>
+  <object name="tp_atrium" type="teleport" x="16" y="160" width="32" height="48">
+   <properties>
+    <property name="func" value="righthallway_tp_atrium"/>
+    <property name="sound" value="doormove2"/>
+    <property name="target" value="atrium"/>
+    <property name="x" value="46"/>
+    <property name="y" value="27"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="72" height="37">
+  <object name="tp_rightwing" type="teleport" x="592" y="544" width="64" height="32">
+   <properties>
+    <property name="target" value="rightwing"/>
+    <property name="x" value="16"/>
+    <property name="y" value="5"/>
+   </properties>
+  </object>
+  <object name="dronesound" type="script" x="416" y="464" width="64" height="80">
+   <properties>
+    <property name="func" value="righthallway_dronesound"/>
+   </properties>
+  </object>
+  <object name="righthallway_leftroomopening" type="script" x="848" y="128" width="32" height="96">
+   <properties>
+    <property name="func" value="righthallway_leftroomopening"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

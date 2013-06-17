@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="60" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Right Wing"/>
+ </properties>
+ <tileset firstgid="1" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1889" name="shelves" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/shelves.png" width="96" height="256"/>
+ </tileset>
+ <tileset firstgid="1985" name="stuff" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/stuff.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="3009" name="tools" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/tools.png" width="500" height="500"/>
+ </tileset>
+ <tileset firstgid="3970" name="mansion" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/mansion.png" width="611" height="770"/>
+ </tileset>
+ <layer name="floor" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztlklOAzEQRQsxrxnvEOACBG4I4QIMu0AkhiVCYtgxXIBhy7hnXPIQask4jtxuXB114sWT/Bed/OfqKFUbEJmDeViAWo48CEMwDCMwCmMBz//kRajDEiznzBMwCVMwDTMwG/B8PaCfme9F5AEe4Qme4UX0fV/5jjd4hw/4hC9Jvsn3f74xchHfGDn5Jt8q+Z7ze76AS7iS9qzlc81n38At3El71vA9dPiV4bvt8Otl327Nt9/e5zy50z3YOfZ9dLoHO3fLtxW4P8XyPQrcn9J8+9u31/aN5Ftd36b87jI78vfcCvh/K9J3BVahAWuOrOW7DhuwCVuOrOW7C3uwDweOrOV7DCdwCmeOnOabz9fXX2u+dn+7h9Z87f6+HrHma/f39dCar69Hmm+4b2O8nPmaXbNzGfM1u2bnMuZrds3OofMtsm+YXbNz6Hy19itfj7L2qyLzrPI+GSN/A4+lYJ4=
+  </data>
+ </layer>
+ <layer name="wall" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztl0cKAkEQRZvpMVzA7NZwAbPXMFzEcEHDFQxbwxUMC/9ihJpFC8J0ifAffP6uHzp0U2UMIYSQX7AKjFkjG9HbwL/3BMcZuYi+evLmQmPySBFJWWPSSEZ01vrxtuBrI12kBkcdaYhuevKO4Bsj09DP+S5m8M2RpbKXfGaHe3VA9o4+erp3N5z7QO6OfnrylnCvKkjZ0VUbfxOSoodzB0jf0UMbfxM04ZtACCGEEC2SnK++cWrPV2+n5nwlnVrzFZ3JUIj2D9kav7MT7R+yNf7bSbR/yNb4noto/5DNXYSQ/+AFons1ew==
+  </data>
+ </layer>
+ <layer name="items" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztl89KAlEUh89uRsVFgr5HQu1sn6CvUQqaYPUCBrXxDyjoJjcGtdGEepGEfI8CXfu5aOPCudJ17qDng9/u8Ptm7izuHBFFURRF2T99T2RArsg1KZGyt3/vM44hqZAquSG1ELwjHC+kTm7JHbkPwRsVckmRi6Trp7BDPc43jP+/59IXyfvm812cvQDvd0xkHts+U8JZJgW6igbv8cHMZ8DcAucywPtHha6qhfNbk6YnY9jVZK5lyXtGz7lh15i5iSVvFPESIn4ifO8jzicH3lecbw68x8jm/0GDPBzRvakoiqJEmy/upJmDe+kH568D7wn7Q2qH3cUWpzizDryHSpudrWO4t9nkHefUgVdRlN1ZASWkJEo=
+  </data>
+ </layer>
+ <layer name="items" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1zkKwlAQxvHXZnFBlFiZA7gVCrHRzkp7lyvE3uUK2ngOPYzbPVRcWv3ACBZPiBBmROcPE+Q1P57FkCj1eW4q3FnUcblNjaE7izq572/f19cYurOom2sM3ZlEm2MplbVorK2p1M58/PZg1ojcE8yzSWN9Yzcbjxi9m4PpMrj/dt86zAaD+y7HwE4x6F0PZo3B7cDsMrhDmKMX18I+tYl26mt5mAUit4c93g92eQtmm8gdw5wErg9zwPA/T2HOGNwFzCWDK0mSJEmSRNkF7ztXoneeFZw1ZoNJ49s1Y9O4e3gHzBFTgVklcuNwEpgkkfesCK+EKRO7kiSF7w7f/yAr
+  </data>
+ </layer>
+ <layer name="clickables" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQEBAAAAgiD/r25IQAEAAAAAAAAvBhwgAAE=
+  </data>
+ </layer>
+ <layer name="hero" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQEBAAAAgiD/r25IQAEAAAAAAAAvBhwgAAE=
+  </data>
+ </layer>
+ <layer name="items" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztzrsNgDAQBNHNjO1C+aTQAXSAW4NOIOZCEkTmk6x50sazEgAAAL7MSVpS/e5uzfLTPaJ0xjp/3i5r3g5d+AtZ6rL3C7SoD9JgG22TbbVtwfsVAAAAALTrAT5LCOk=
+  </data>
+ </layer>
+ <layer name="items" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztziEBAEAIBLDTNHz6ByEC4gVmS7AEAABg9yrpul4AAAAAvwZ1bADI
+  </data>
+ </layer>
+ <layer name="overhead map" width="30" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztl20KgzAMhsU/7ibuItOdQxjsIsIuotsx10KF4lzJmw/LZgOhguLjU5vSDHVVDUA+XH6LG/guJO8J7mjILb77+Ka4lr6peS6+x/A9u5xDPlfXrQF38bWYk9Q7p+D1MlgDKV9KWPhacqW+3HnO5Svl5l5XWzW+NbbKvtTvHwnPX9y93uU18Qxlb4ljCt6UPYGyl0r/VxzIPin9X3EsLieXXZjzPrr2Y2Pou0c9xoHUZvHdDqQ2NX0pdYdw0f1Kq1/I5Zuq8XhsCN9Z+sF9uLn7haP4/uO6yuHrz54WPZeEaeFLYWr7UpmavghTyxdlavhymCh3rj/7Mg7Tn78agKsRKFODy2FKuVymhCthcrlSJoerwUS5Wkyf63My5Qxd8nfyDYJezEw=
+  </data>
+ </layer>
+ <layer name="collision" width="30" height="60" visible="0" opacity="0.75">
+  <data encoding="base64" compression="zlib">
+   eJzt0kEOwCAIRFFu5P1v132DVhAx2D8JKw0PbJuItCLVCy4uLi4uLq5+Z6c7Cu66a5lnh3vqv6riSue+dj7reud/n51yZ+J1v979NlfrofXc6Y563uSuzGl1o94HFxcXF/d/7ii49cyZZO9YdU9PsnaLNq1u9reMNqmcegBTTfK3
+  </data>
+ </layer>
+ <objectgroup name="objects" width="30" height="60">
+  <object name="ladder" type="object" x="16" y="480" width="96" height="32">
+   <properties>
+    <property name="func" value="rightwing_ladder"/>
+    <property name="image" value="ladder_horizontal.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="30" height="60">
+  <object name="tp_righthallway" type="teleport" x="224" y="16" width="64" height="32">
+   <properties>
+    <property name="target" value="righthallway"/>
+    <property name="x" value="37"/>
+    <property name="y" value="33"/>
+   </properties>
+  </object>
+  <object name="tp_mainhall" type="teleport" x="16" y="848" width="32" height="64">
+   <properties>
+    <property name="target" value="mainhall"/>
+    <property name="x" value="46"/>
+    <property name="y" value="21"/>
+   </properties>
+  </object>
+  <object name="rightwing_powercutshort" type="script" x="208" y="448" width="96" height="48">
+   <properties>
+    <property name="func" value="rightwing_powercutshort"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="28" height="15" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Abandoned Chamber"/>
+ </properties>
+ <tileset firstgid="1" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1377" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="1889" name="doors" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/doors.png" width="471" height="483"/>
+ </tileset>
+ <tileset firstgid="2759" name="tools" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/tools.png" width="500" height="500"/>
+ </tileset>
+ <tileset firstgid="3720" name="furniture_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_2.png" width="512" height="512"/>
+ </tileset>
+ <layer name="floor" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxby8rAsA6I19KJ3gvE++hI08tfo/4b9d+o/0b9N+o/ymgAtwExKg==
+  </data>
+ </layer>
+ <layer name="walls" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFAwEmsjAwTGEhXpwY8yYB8WQS6Y1AvIWAOmzuAenbBMSbSaQvAvEVAuq2YLEPpO8SEF8mkf4IxF8IqLuCxT6Qvk9A/JlEGgbwqftCRvyOglEwEgAA4ylLng==
+  </data>
+ </layer>
+ <layer name="items" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJzt0EkSwVAUheGrKwNJRliDboY16GbYCNagW4cmsY1EErugdKugym+kxKuSmYGcqm/ycu87ryIS5Z9jp0Wc9PvZWBeZYIoZ5nq4uwrMFVFCGRXF3p6uQ6BvydwKa5iwFHtZTSSHvPY6azDXRAttdBR7N7rugT6HuS1cePAVe1V6aqhjkeGNWGENExY2me//5Jkj959wxgVXRV+Xnh76sLnXwRYuPPjYheyLGSJxJJBEyvicGdAzxEj7/BYlyq/yAJLuJfE=
+  </data>
+ </layer>
+ <layer name="items" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJzt0rkNwkAQheHJIGDNDR1AwH12AJVAJRABjWA3AqYQLnGLI+QPCJBZEaEl2ZE+WfbMzrMsi9iy9d8KOSJhx1xejqy8wbwOWV2MlMgYE/U549L3fvROPfb0MSXHhafJ8+kvAnk75vY44IgTzri8zl+53nDH423ngD1DzHg2h6/J29DfBvIi3Cs4iCKGOBJIIoU0Mshqvs2SnBXWmrwC80WUUEYFVdRQRwNNtNA2+C/Y+l5PwI8hBg==
+  </data>
+ </layer>
+ <layer name="items" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjALyQQQ3A0MkN/3sKwfaVUFH+0YB/QAAsVUBzQ==
+  </data>
+ </layer>
+ <layer name="clickables" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAoGHgAABpAAAQ==
+  </data>
+ </layer>
+ <layer name="hero" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAoGHgAABpAAAQ==
+  </data>
+ </layer>
+ <layer name="items" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjAIIeMfLwPAeiD8A8Ucg/gTEn3khcl+B9Dcg/g7EP3gH1p2jYHgCAD9WCgA=
+  </data>
+ </layer>
+ <layer name="overhead map" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJwzYmFgMBrFWPEXZgaGIiBdDMSfmcnTRwwNY5cAMQwUEtCD7B4TJH20AoZI/guhg32BLKP+oyYYSf67AswbQkBamIV29GUSyoNRTDwGACnHPN4=
+  </data>
+ </layer>
+ <layer name="collision" width="28" height="15" visible="0" opacity="0.7">
+  <data encoding="base64" compression="zlib">
+   eJzrZ2Vg6B/Fo3gUUwXDAK3NxwdoYSal9lHTnYPRvlFMHQwAEQLbHQ==
+  </data>
+ </layer>
+ <objectgroup name="objects" width="28" height="15">
+  <object name="canvas" type="object" x="112" y="80" width="64" height="32">
+   <properties>
+    <property name="func" value="abandonedchamber_canvas"/>
+   </properties>
+  </object>
+  <object name="tplhallway" type="teleport" x="256" y="64" width="32" height="48">
+   <properties>
+    <property name="sound" value="doormove3"/>
+    <property name="target" value="lefthallway"/>
+    <property name="x" value="39"/>
+    <property name="y" value="16"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="28" height="15"/>
+</map>

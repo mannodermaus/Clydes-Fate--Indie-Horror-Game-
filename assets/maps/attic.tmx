@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="16" height="20" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Attic"/>
+ </properties>
+ <tileset firstgid="1" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1889" name="furniture_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2913" name="paintings" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/paintings.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="3425" name="tools" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/tools.png" width="500" height="500"/>
+ </tileset>
+ <tileset firstgid="4386" name="redpaint" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/redpaint.png" width="256" height="256"/>
+ </tileset>
+ <layer name="floor" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt0MkNgCAURdHH0oq0Ey3VoQBQCxC1AYcmvHbAZw3JWfzFy03wkgJmLPCG+38bInYcxlvGXumXfumn9XsnDRgxOXs/sKkrqcHq7P3IpmXb4czoX2xuPHgz+qn//wGArfJR
+  </data>
+ </layer>
+ <layer name="walls" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt0MkJgDAUBNBJYgOW4NKiWwFuZblctAO9uRTi5KpCUEE8OPAY+GQuAb6RSgI1NYbWWnncT7zNtBhaW0/2QgGSlKE1Sx33Dm8ueYbW/JP9PoENhBRRTIl97T9Tvs8op4LKi/s/fzoB9OL+fuB2fLB/Ixu3Gh7X
+  </data>
+ </layer>
+ <layer name="items" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg54L0gA8MHIP4oSJ7+/yB9QgwMjEJUdRYGWMnBwLAKiFcj0Ws4iNd/Eqj2FBCfRqLPkKB/FJAOHgLD9xERYYxLnSInA4MSJ2H9uNQ5AsWciNCPS912LgaGHUC8E4h3ceHWvxsotweL/HWg2A0gvgnEt/Dovw2Uu4NHnt4AAD/2HLs=
+  </data>
+ </layer>
+ <layer name="items" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBic4DUPA8MbIH4LxO94SNfPzcvAwAPEvEDMx0u6fm2gHh0g1gViPTL0Uwo+CVCmX1CQOu4YBaNgOAMABs0GUw==
+  </data>
+ </layer>
+ <layer name="items" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF6KCcnYGhgh03nxCYDlQ7gx03nxDYDlS7gx03fxQMPlANjJ8aIuIIl7rZQLE5ROgnVt0oIA4AAJsTDAM=
+  </data>
+ </layer>
+ <layer name="clickables" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKRCQAFAAAB
+  </data>
+ </layer>
+ <layer name="hero" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKRCQAFAAAB
+  </data>
+ </layer>
+ <layer name="items" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKRCQAFAAAB
+  </data>
+ </layer>
+ <layer name="overhead map" width="16" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxLYmJgSKIQqwDxIiBejIPGxlZG0p8CxKSCRCT9LWTobxy1f9T+UfsHhf0sQOwExM44aGxsZiqUWyAMAEITNGE=
+  </data>
+ </layer>
+ <layer name="collision" width="16" height="20" visible="0" opacity="0.7">
+  <data encoding="base64" compression="zlib">
+   eJzTZ2Bg0B/FA46RATlqqKmfGDCqn3AYk6JvoPWTCgabfnIxAK0RIoU=
+  </data>
+ </layer>
+ <objectgroup name="objects" width="16" height="20">
+  <object name="door" type="object" x="112" y="256" width="32" height="32">
+   <properties>
+    <property name="func" value="attic_door"/>
+   </properties>
+  </object>
+  <object name="photo" type="object" x="96" y="32" width="64" height="48">
+   <properties>
+    <property name="func" value="attic_photo"/>
+   </properties>
+  </object>
+  <object name="hand" type="object" x="192" y="64" width="16" height="16">
+   <properties>
+    <property name="func" value="attic_hand"/>
+   </properties>
+  </object>
+  <object name="pencil" type="object" x="96" y="96" width="16" height="16">
+   <properties>
+    <property name="func" value="attic_pencil"/>
+   </properties>
+  </object>
+  <object name="gun" type="object" x="112" y="96" width="32" height="16">
+   <properties>
+    <property name="func" value="attic_gun"/>
+    <property name="image" value="gun.png"/>
+   </properties>
+  </object>
+  <object name="note" type="object" x="32" y="96" width="32" height="32">
+   <properties>
+    <property name="func" value="attic_note"/>
+    <property name="image" value="note.png"/>
+   </properties>
+  </object>
+  <object name="INIT" type="init" x="224" y="0" width="32" height="32">
+   <properties>
+    <property name="func" value="init_attic"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="16" height="20"/>
+</map>

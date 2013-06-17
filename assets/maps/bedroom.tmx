@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="25" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Upstairs Bedroom"/>
+ </properties>
+ <tileset firstgid="1" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1889" name="furniture_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2913" name="mansion" tilewidth="16" tileheight="16">
+  <tileoffset x="2" y="2"/>
+  <image source="../graphics/tiles/mansion.png" width="611" height="770"/>
+ </tileset>
+ <tileset firstgid="4737" name="furniture_1" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_1.png" width="605" height="1023"/>
+ </tileset>
+ <tileset firstgid="7068" name="stuff" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/stuff.png" width="512" height="512"/>
+ </tileset>
+ <layer name="map" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztlUkKAkEMReOmLuNwAYe76a6FVrctOO4dLuB4Ez2JbxlCU1BdZiMuHuFTdCD9IClbIjOYwwJKh7yCNWxg65QPcIQTnJ3yBa5wg7tT9vj/v+6jDR3oQs9k+9bURx8GMISRyfZtHEQmId1Hyhw7+u9Duo+UOR70fwZfHy/6v4Ovj0JEplJfC5VzfFR8v5T6Wqmc4yM2h645PmJz6OrlQ1cvH7r+fTT3YfeNhw+7b2JzeNzzb92P2P63c6Te8w+GY0Eo
+  </data>
+ </layer>
+ <layer name="map" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt0ksOwVAYhuETkrolomswdd2K+5hNuCcuAzaBtsasoVgIxT68BhIkJ21PMNEvefJPev6vbY4QQfxmpAkxwdhlTrEPqXUYnLVgusw1zood9v39sHOZB4TDah2n+/vBcZkXpBU7/MTmXzXpamlq548pvgkOzrjgmnp9ZuTxbsii6UJEEEUMcST012cMj3dDlgz7ssghjwKKbx22x7shS4l9ZVRQRQ11NJ56Th7vhixtdnXQRQ99DDDU5Wf8ZsGuJVYwYMLC+oMdQYL8MrOkEPPkd/dvsP1iz2P/Y/5rbj97Wf0=
+  </data>
+ </layer>
+ <layer name="map" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztkrlOAlEARW83C5UW0EHi0milP4FipV/gVrnWEExErbSSTjqXn9DO5Qekkx8A7aRHPQkvYQLCIz6nm5ucZHgM5yTkScn+e0VfKvlujo1A2gy6z5209AXfoEz37Ap/zbFRwX9iGlN4p2EGZk3jHv+DY+Ma/41p5PEuwTIUTOMNf8Ox8Yj/yTT28O7DARxm3LzDdom3GpO7f+s57kJu8HwuK81nh/9ui/9jOxjtLuM9gmOo/NIo4F8Z0TjFf2Zp2LaDfzfSeA2letj7fIv/ztJoelIL3uHDG/z+HP9FpPGJvx1pPON/sTQ87qgPAYRj3NeJlDSZsr/nsgX8izE3VvGvxdxIlizZ3/cDp90otQ==
+  </data>
+ </layer>
+ <layer name="map" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0AoUcjAwFAFxMRCXcNDGjolAcycB8WQgnkKCHSFyDAyhQHwJiC/L0cZto2AUUAsYAdOoMY3TaZAc/ewJHs1zo4AKAABugQmu
+  </data>
+ </layer>
+ <layer name="clickables" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAHgzCcQAAQ==
+  </data>
+ </layer>
+ <layer name="hero" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAHgzCcQAAQ==
+  </data>
+ </layer>
+ <layer name="map" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDDYQI8/AECs/0K4YBaNgFIyCUTCYAQD8VQD4
+  </data>
+ </layer>
+ <layer name="map" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDDZgIsfAYCo30K4YOuAFOwPDS/aBdsUoGAWjYBTQFwAAUxEChQ==
+  </data>
+ </layer>
+ <layer name="overhead map" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJxLY2JgSBsm+AkrA0MSGwQnE4Efs5JuhwpQHylAkY10O1xItMORDDvo4Q9S7aCHPxKR0gcuGj1tkBofxALkMCXVH+TYMeoP4u0Y9Qfxdoz6Az9wHIb+OAIsH5nYcGMWJDcw4lGHjg+TUCfD3MBMor7hhgEqpWve
+  </data>
+ </layer>
+ <layer name="collision" width="25" height="25" visible="0" opacity="0.84">
+  <data encoding="base64" compression="zlib">
+   eJztjcENACAIAzsa+0/l1xhKo+IHadJEQe8MgHW7BQoym3PDZox2xJwoGQ4j59Wh7srBdl7Yu13ODw7lfuny2Nkez5Gdqg7V03+VOgD87mOB
+  </data>
+ </layer>
+ <objectgroup name="objects" width="25" height="25">
+  <object name="bed" type="object" x="272" y="176" width="32" height="80">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="bedroom_bed"/>
+   </properties>
+  </object>
+  <object name="closet" type="object" x="336" y="144" width="32" height="64">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="bedroom_closet"/>
+   </properties>
+  </object>
+  <object name="book shelf" type="object" x="32" y="64" width="32" height="64">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="bedroom_bookshelf"/>
+   </properties>
+  </object>
+  <object name="INIT" type="init" x="272" y="16" width="48" height="48">
+   <properties>
+    <property name="func" value="init_bedroom"/>
+   </properties>
+  </object>
+  <object name="tp_righthallway" type="teleport" x="160" y="368" width="32" height="32">
+   <properties>
+    <property name="func" value="bedroom_tprhallway"/>
+    <property name="sound" value="doormove1"/>
+    <property name="target" value="righthallway"/>
+    <property name="x" value="58"/>
+    <property name="y" value="7"/>
+   </properties>
+  </object>
+  <object name="bedroom_flashlight" type="object" x="112" y="144" width="32" height="32">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="bedroom_flashlight"/>
+    <property name="image" value="flashlight_icon.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="25" height="25"/>
+</map>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="36" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Guest Room"/>
+ </properties>
+ <tileset firstgid="1" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1889" name="furniture_1" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_1.png" width="605" height="1023"/>
+ </tileset>
+ <tileset firstgid="4220" name="library" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/library.png" width="500" height="715"/>
+ </tileset>
+ <tileset firstgid="5584" name="school_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/school_2.png" width="512" height="256"/>
+ </tileset>
+ <layer name="floor" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAEnUDcRWMaG5gJxLNoTMPAeiDeQAJNLf/uB+IDJNCj/h31LzX8S6v8S2v/UeJfGJ/e/oXxR4p/Byp+R1p6Hk7+RQYjob0x6t9R/476d9S/o/4d9e+of+kHADfTI1o=
+  </data>
+ </layer>
+ <layer name="walls" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJzt1klOw0AQheHClpJ9snIGSI5h4HoMp2AO5BLM4xUMYRbDFZyE4UdWhOWU2i17hegnfapeJPVWlkrkf2apIrKMlZy5Wvn9T+QlrnFjMQfedG+PfbvYy5n9VG/sJYYYWcyx0nvOvgtc5syrVG/gJxpoWsyWP937wr5XvOXM91Rv6CfmsWAxF5Vel2JZq4msYwOb2MI2dtCrFdvZrop0qubf7LP7AIc4wjFOcIqzgr2TRMr3MMmA3be4wz0e8IgnPJfsjQ29I3aP8YFPfP101UVm4NXL9QaG76HB7iZaaGMWc+igW7I3dN+hi4uLIZFyG5luquxbu6lsEiu3kemmyr61m8omgXIbmW6q7Fu7qWwSKreR6abKvt1N5eLi8tfzDZnLe1U=
+  </data>
+ </layer>
+ <layer name="items" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztjbkNwkAQAJcEgy/hkewKIOERTyM8jfA0wtMLJDyFQMJTgIEGmMxH4MjyScCONLrd4HZElG9h44ts/XjfMe/xgEc/+V9aTtw+W/cvzFe84T3DrhiRnInXPLOHBSya5G9pqXG7bt1vMDexhe0Mu4qiKIryj0SByAOf+ArcdUuhSBkrWA3ddTu0utjDvsPugNYQRzh22J3QmuIM5w67C1pLXOHa6kbe56soym/xBjGGGfM=
+  </data>
+ </layer>
+ <layer name="items" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztlcsuA2EYhr8Fpm1mJFwAa1oWJE5bLoB2QRyDa6Dd0DoEN4Au2DgsBDfgsCLRYsnaYUWixZKVRxATncQcYmrxv8mTzEy+d56ZTPv/Iip+ZlEXWYJlSOsf1zKGSNawf48zeuf693mv6bgiJFIZKuzsMbMPB3D4OZ/DmXfgfaL3bHIlTcdNOJstvFfMXMMN3EKYmQjUQT20QCu0WXTtpI9ev0W3hPcqhTLQoJOZLohCDAZgEIZcelP0piy6NbhqIQwRGGNmHOKQgGmYgdkf3QtN5FJz9yxe8oLz1YM3yjvGHPyGvlIVEKkOFF7fsvkscZwJF952nB0evCs4V114Vf5HJvjOk5CElI//tzVc67ABmz56T3BlIAunPnofcOUgD49FWNdUVFT8zxF767HF/vrXucN579A7zLo0AqPve4L++7xVjKBIedBZZw7fPCx4WBcbcDY69G7j24FdD95unD0OvSoqxcobRPo8kg==
+  </data>
+ </layer>
+ <layer name="items" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztzsERQEAUg+Hc7MyqQzM6QRnu6MWqgGKoQu7GNe+w+WZy/gNYrc4MXFnfvdl8Arr21bUx3f6nOzfaH2ZmZlaXIQEjNyVtd2Fv5TZxd2evcIe4axblBfQPCfU=
+  </data>
+ </layer>
+ <layer name="items" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztzaEBACAMxMC6338vloEJ0B2AYu5MZKoAAAB44eTfe6V3yk4vTLkJkASQ
+  </data>
+ </layer>
+ <layer name="clickables" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAvg0Q4AAB
+  </data>
+ </layer>
+ <layer name="hero" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAvg0Q4AAB
+  </data>
+ </layer>
+ <layer name="items" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUwMAd7oGxl5FnYOzFBVrYB9oFo2AUjIJRMApGwSigNzChY3vkNDuCjqSTvWdH2zejYBQMewAAaVQEnQ==
+  </data>
+ </layer>
+ <layer name="overhead map" width="30" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztluEJwyAQhYNr2E2aRUzzOzsIXUTIIm06XE8wcLQX9M5o0+CDhwF90S940Ul13fQj9+AneIm06/MV5WKZraz3HcyRE+a8LJp3ZuatMOflGi87e1ZeA/1D8A2sK/FaVOO4DkvzOmKMrcT7Ocb9Me8l7Jdho9WFeFNcgjfFR+A14dvX5t3rf8XlXbOx/Ui1mjkvxVvDFG8p43vXC837UGl3qkV936kkNStVbs1KlfuPkqrxNt7Gmy8urz9vqDNlROsxRH/uGZSynr3eeXa/AUCvAnE=
+  </data>
+ </layer>
+ <layer name="collision" width="30" height="36" visible="0" opacity="0.9">
+  <data encoding="base64" compression="zlib">
+   eJztk1EKACEIRL1R979dvxHmJInuqgNDRI3PogYRjXa7qEmYE7POZVD9k273oaw2r+0TZU95dI9cDtWK5kqSuFpV577+LUvOF7m3vVhyNXeQjevh5tbi7srEfZEXN+K8XC7ivN7cffR8T2sff+GifixrZvYE926MFg==
+  </data>
+ </layer>
+ <objectgroup name="objects" width="30" height="36">
+  <object name="tp_righthallway" type="teleport" x="224" y="544" width="32" height="32">
+   <properties>
+    <property name="sound" value="doormove1"/>
+    <property name="target" value="righthallway"/>
+    <property name="x" value="11"/>
+    <property name="y" value="7"/>
+   </properties>
+  </object>
+  <object name="switch" type="object" x="400" y="48" width="16" height="32">
+   <properties>
+    <property name="func" value="guestroom_switch"/>
+    <property name="image" value="switch_up.png"/>
+   </properties>
+  </object>
+  <object name="keyshelf" type="object" x="240" y="384" width="64" height="48">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="guestroom_keyshelf"/>
+    <property name="image" value="shelf_normal.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="30" height="36"/>
+</map>

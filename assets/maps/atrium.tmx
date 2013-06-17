@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="The Atrium"/>
+ </properties>
+ <tileset firstgid="1" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1889" name="furniture_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2913" name="mansion" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/mansion.png" width="611" height="770"/>
+ </tileset>
+ <tileset firstgid="4737" name="stuff" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/stuff.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="5761" name="library" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/library.png" width="500" height="715"/>
+ </tileset>
+ <layer name="floor" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1jsKhEAURNHerbMDTR0FTf2ALtcCU7FNbOvBDYriZWOfCapNKf2VTumVNug9KbOyKGvg2+U98cDD8b76vkr5GfdTj1ppjBsPr8bDq/Hwajy8utS+GpTxpqPsq03ZbzrK3sUDjzc8ct8RxSP3v8IDDzzwwAMPPPw8cr+7xN4qsW9L7F888MADDzzwcNlXX9xv7Ksvbpf3xAMPx9vlPfE47wOzyiNi
+  </data>
+ </layer>
+ <layer name="walls" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmF1uwyAMx/PCY3fDflykWw+x13Q9x6ZlvUpvUiLFmmfVgMFAVvknWfBAjAng/ONheF62bhh23vbeDu7/+jn6sa/e3rydCubv7Wf0Yz8WuxTM39vPcXlG4z329DMuz2i8x55+vv3YyduPt6v7e89S2/k+1vKTC75nqe2j/dfykwu+Z6n2aP+1/OSC71lqy+2Hhp9cRuHcof3Q8JMLvmehdnLh+6jlxzAMwzBaM2tV0J8t5topzoVjr6E/ObAuTn1/3D/BgWjOGvqTA+ti3A/Fyv0TnIjmrKE/ObAupn0u1nm952Usbi9Ec9bQnxxYF9M+FyunQa9Ec7bUnzgm6E+RWDWQ1sm06nPaSOtkWvU5baR1Mq36XCk0/0nrZHT8vtM5o/lPWiej43EebXnO6DqkdTI6HnKo5jlL0TZ0HaXAOmL7IdFdEGPIH/0elQLvJLYfKbHNbN1vLgn5o9+jUlLPJY4tdl4gl6wprwM4tth5gVzSM69z4Nhi5wX2uFUd72uTPhbHtrY6402wjjXz/tI7Ah0+n2QdhmEYhtGTO2v+JIQ=
+  </data>
+ </layer>
+ <layer name="items" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztl0tqAkEURZ+B2G3vIoF8tmEgn40kugUzT3TiZ5rsQeNU99AdpzpTiLqMHOfddCPVaDX3wKXgDt67j3pQlJkQQggh8vhrmG3RDu0b2d65cxmZ1VGAwijbWwdmm+B0OfO4IectukP3UbZXC80uwtPlzOORnE/oGb1E2d4VM1yf8RxFaTLDQwXmqBKv3Mdbyp208Noe3dUHWT9T8nbxeh7NURW0V6IMtFeiDLRXogy0V+JYOvzB3x3+w13XK8oXPb8d9nVdrygzes4d9nVdryhLeq4c9nVdT1SPPvsxSNmRId7Io90Zk3WCxrx5E/SDpocTb+rRHDFZExSTPUG/aHE48RYezSGEEEIIcQz/A7o8VQ==
+  </data>
+ </layer>
+ <layer name="items" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmckuQ2EYQD8saEJLuGKIYWVYEhZKDAtWhkdo2Rk2xjcodmXFOxQr0xOYYoiyMj2BKYYYEsNJWLBz71/3RnwnOV00/b//O03aRSuiKH+L7QyRHdzFvQznc9Y5u4GbuGUwxyk33HmLd3hvcP8FZy/xCq896Mjzi+RjARb6nc/J5mwOWphrY04Nr63FKkuk2vp47iVN5DXN3v2NzGjCZmyx2fH1vjrOBrEeGxy8H4M0DH12FPlEin32ZzglEfcNs/uI9b1DURRFURRFURRFURTFLd5SebDxu1AoXSSc/mvrOKaEhlIbHREaxr90bPhFNnHL4Pc6E1ozRdqwiYZmGx0xGuZwjb3X/d519LJ7H/bjAIZoCNvo2KchjufsfYGXeIXXLndE2X0KpzPNZ2UHRHLQwtyA+byfssjuS7iMKwnoqGP3INZjg4sdR+x+jCcJ7AhjN/a42CFZv9MxgZMedZziquF/KyEPO5IwGVPwzLAjwu7jHnSUsXs5VmAlRg2/K2PsPofzuOBiRzu7d2AnduGSYcc+u8fxAA9d7Bhi92EcwVEcy3I2ZwZn8YHdH/EJn938fCiKoij/nndQbVzT
+  </data>
+ </layer>
+ <layer name="items" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztz6kVgDAQRdFvwSahB7DQCTTG0ghLgYzBswhCePeccSP+kwD8kQuStwt2RXh7zX21bW8+vP/QWkOXQEfvpcGf/x+teYqwe7aG5ULHag1bhB0AAAAAgPhkTsrd2yueK62hSqADAAAAAACkZwexfwhz
+  </data>
+ </layer>
+ <layer name="clickables" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer name="hero" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer name="items" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztz7EJAkEQQNHJLtK7QKvR1Ga0Fr0rRkGwALsQLEBrcBIjDWRdVOQ92GRglvkRAAAAAAAAAOXWTcSmeZz3ORuezH/BoovYj8r3D7l7HNe7p8QyG1b5Tm90nHP3kh3XL7X0ef/Q1ftv0kZM23r/vWKb9+8qNtzNsmP+4RYA+Ac3mGANdw==
+  </data>
+ </layer>
+ <layer name="overhead map" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmGEKgzAMhftDjzHYRdx20+0m7iKbu4iywpBJqEmaaBswDx7+san2a/HFqQlhWvgZfWlDuLb/aw/u4bh2nRDvgxoF89euc06MO7X589euU3sdnQf9/h04Z5zrbcc6Uh7WJOVhTc7DlpyHLTkPWzoSj0f0O3oQXj8N/Rwv5Rx3Bg+tOftSkhdLm7MvJXmxtC3zmHtLTl+p5QH7WEkvvFYPZmdsPbU84Pguoy9P9fKp3M9ZTy0PbPzynVLvlvvtK8kjp1but68WD6qW8/idLe65mgX3eW+AxxZ5bNyIRypTYTlJswZUPWxdUrmMylrY83WZ+4gSt54kB1jM75JcZrGf4vLAsogFcTOKRQZrwthYPBNrws6K8ygv52FLzsOWjsBD+y+RysmztP8TOTlXa85alPiv6Xa73e59/QXYu359
+  </data>
+ </layer>
+ <layer name="collision" width="50" height="50" visible="0" opacity="0.87">
+  <data encoding="base64" compression="zlib">
+   eJztk0sOACEIQ72R97/d7CfGDxRKtE26GBMob8TeWuuyLMvyFf6L3Yed7+3Dzvf2YeeLY143ql2dRcrDUUnisOXsnlv7Z5mdj57/Nh72PK9yrMSe77X7uIVjJfZ8r90Hk+NE0XvlmcVTi74P9CzVONC7xtorcbzLsauKHF5V4ECJxRGlTA6WsjlYfT0Zo7qTDG8uggP9j611Vo7oXbHWWXrMvjNkffPIN5YxgyzLshzrD4APScw=
+  </data>
+ </layer>
+ <objectgroup name="objects" width="50" height="50">
+  <object name="tprighthallway" type="teleport" x="768" y="400" width="32" height="48">
+   <properties>
+    <property name="sound" value="doormove2"/>
+    <property name="target" value="righthallway"/>
+    <property name="x" value="3"/>
+    <property name="y" value="12"/>
+   </properties>
+  </object>
+  <object name="tpleftthallway" type="teleport" x="0" y="400" width="32" height="48">
+   <properties>
+    <property name="sound" value="doormove2"/>
+    <property name="target" value="lefthallway"/>
+    <property name="x" value="51"/>
+    <property name="y" value="13"/>
+   </properties>
+  </object>
+  <object name="hint_note" type="object" x="112" y="144" width="32" height="32">
+   <properties>
+    <property name="func" value="atrium_hintnote"/>
+    <property name="image" value="note.png"/>
+   </properties>
+  </object>
+  <object name="tplibrary" type="teleport" x="672" y="64" width="32" height="48">
+   <properties>
+    <property name="func" value="atrium_tplibrary"/>
+    <property name="sound" value="doormove4"/>
+    <property name="target" value="librarydownstairs"/>
+    <property name="x" value="7"/>
+    <property name="y" value="74"/>
+   </properties>
+  </object>
+  <object name="blockingshelf" type="object" x="112" y="416" width="96" height="112">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="atrium_blockingshelf"/>
+    <property name="image" value="bigshelf_six.png"/>
+   </properties>
+  </object>
+  <object name="mastershelf" type="object" x="368" y="16" width="64" height="112">
+   <properties>
+    <property name="block" value="True"/>
+    <property name="func" value="atrium_mastershelf"/>
+    <property name="image" value="bigshelf_four.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="50" height="50">
+  <object name="sfx" type="script" x="496" y="528" width="32" height="80">
+   <properties>
+    <property name="func" value="atrium_sfx"/>
+   </properties>
+  </object>
+  <object name="scare" type="script" x="544" y="192" width="32" height="64">
+   <properties>
+    <property name="func" value="atrium_scare"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

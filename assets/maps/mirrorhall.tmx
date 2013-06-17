@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="41" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="name" value="Mirror Hall"/>
+ </properties>
+ <tileset firstgid="1" name="walls_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/walls_2.png" width="512" height="690"/>
+ </tileset>
+ <tileset firstgid="1377" name="mansion" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/mansion.png" width="611" height="770"/>
+ </tileset>
+ <tileset firstgid="3201" name="floors_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/floors_2.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="3713" name="library" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/library.png" width="500" height="715"/>
+ </tileset>
+ <tileset firstgid="5077" name="furniture_2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/furniture_2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="6101" name="stuff" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/stuff.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="7125" name="bloodythings" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/bloodythings.png" width="512" height="512"/>
+ </tileset>
+ <layer name="floor" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJzt0LkNwDAAw0CX2X8ux9klT29tIQagABZqbx5jnGmlK03Yv9OT3vQBf9tHP/1IXvrpR/ptH/30I3nppx/pt33004/kpZ9+pN/20U8/kpd++pF+2+fvfvRtptatbA==
+  </data>
+ </layer>
+ <layer name="walls" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJztlksOgzAMRLPg/vsWLkLpRShchM+iYWHVsoZ8wClC8pOsbIJmMsAozhnGfXlUzj391GBtqmt9bfqtn5efDqzv6rfvCl+bfu/n42cA68j2/cOn9DUm5NcDn6VAeqn5yfNoQt860pv8zH4WsK4759HOkN6V9LUm6EzAZ6vskbLL8RXySRlqvOeGZXfEF/J5JkPet+SNstOCMiSPOX3O+4K8aWVHUIbkkevF4H0xMo/a9Mwj16sjWig/zeyIaSe/LqIlz1PCm/TI9YaIHu/bkt729JaTmqgT0H+Xuk8b2VvUQUf3aYHuobwfJajfSt5b0T2K9yPaL//PnJ7LBd2jQv2I+o0/p00oP/Sfo367Ir9QB8l+K5kfuoem3v+OPGcYhmEYhnFXvnJV8vs=
+  </data>
+ </layer>
+ <layer name="items" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJztlTlOw0AYhf+GisWxFDsC21cgaUBiuQKEjvUCQKCFK7AVIEEPJdCytNABNUisF2BJGpBYCp4UjzJSPJJnkD0Omic92WP/1vtmbP9DZGT0PzTrEM05uimaNd9GVIFXwLbqNMY6Vc0T1fL1802wbHE8/JivS5PLwjrlwnd5ApZTjo8fs7q0OFleES6FfI9geeL4+DGr4+eTpFheGR6Dn12iF/gVfoOr3LHmNur4+SQplsfUXiDqgDvhLtjijrmC+DmjZm37RDu+bgqxjsB2nAKfTC8YD4gmgvr5NdhuFPhke49ML1gC23LI9w62DwU+2d6j2gsccLqB/HOyeaq9oA9s/Qp8Mnn3HtGDJ5/xV90i8y5G7jdqfjTwfSLzK0auh+/b19DDupHZEyN3CDXDCfBZNv5R2Laj7w8gczBG7jRqZhLg6wVXES4J+CaROaVx7xkB1yhcFvDpVgVcC/BiRvnWwLUOb2SUbx9cB/BhRvkuwHUJX2WUz6g1tYs9cy9i3xRdT1tnYDiP4BBdT1tm/YyMjFpVvy3pWWM=
+  </data>
+ </layer>
+ <layer name="items" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJztlctKw0AUhs9eabpoVdJGqLrRha5s3Si0uqmg79CmOysKPkEvuxZa6BPom7RvoK/hBX0D/2J2OROGmJmewnxwIPwZznzMJSFyONaXSkC0F8TzfWQHTG6bOhwajMclsisBfi04tCOPB5/o0f97DpF1BPj14NCPPCZwm0Z+A2RDAX4OPSol3NOS+n2xTLSF2kbtlNP3SUsdPRtM3wBnbBd1CqcqqoY6Q4UF3I+Cfh9TnMPtgrkHA7gNGb+sMbUfWfU1tR9p+z752btkyUy4n+N/fGJ/vxL2+BBn+sjAfbnDnF2Ns/WOMR8J45pwuzbgN8KcYw2/Dcy9afH77tDnNUf0llu1hZpvuP0I9vM8ory3ags1x3A7Eex3A7dbwX5duN0L9nPEaSX8a9oC/kM9OPQZD1Vum+X6ceukym0jff2e4fDCeKhy28zhsGA8VLnDsU78Am/NMSM=
+  </data>
+ </layer>
+ <layer name="items" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJztzrkNgEAMRFE34pCjEWAb4WiEo2wmw8kmBMhI/0VjycE3A/6tc7Pen7vRbr3+/7VJLSX0DNpjor5VLVvombWXRH2nWq7Qs2sfifoAAAAAAAAA4I0biNQHOQ==
+  </data>
+ </layer>
+ <layer name="clickables" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20LL6AAAAAAAAB4GhmgAAE=
+  </data>
+ </layer>
+ <layer name="hero" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20LL6AAAAAAAAB4GhmgAAE=
+  </data>
+ </layer>
+ <layer name="items" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJzt0MENABAURMHfh+rohMopgEQcSGTm+E6bjQAAAACAczlFlLTfb6tjQ5vsWPUXVv8B8K8O80sFXg==
+  </data>
+ </layer>
+ <layer name="overhead map" width="40" height="41">
+  <data encoding="base64" compression="zlib">
+   eJztmF0KwzAIxwvtJdbtIi27SGEX2cdNu5tsD4swQYI1JtU2DxUkL2b+94ua0LFrmvHwwxn/tk3zCOuzW14/7X66XsFTdt9QZ46urXWCthJdnE4PjTcDbWhDpezQrBlaskOzYmjNDs2CoZe2Uo3xvPXURjVq5/l1Az0pk+oypw9OIfaiiNfGoU2CPi0/yDmHc3i3cm5tHLW1/DAn7lnKrY2LbS0/7v9x+7Rxmn0SP+BwDt7/1znqr6UZxM0OYEh/i+OZy0+KT83H1HzTcpf4Dd3yOzTn/RfvB91cvhJ+XvdvLj+oD6wNWm8ec3si9SjVt8Zrfr943XtSndXAz1Jfzv2ksfhuqY2hJTtrhh7sqEaYAyU68Z700laqc0tduWfueZYWfePRB7kuzW7r7wTW+g5+acc3CO0T6Iu+2783qNM+qeFcOY7AbK9ZdzjvP+gGNpo=
+  </data>
+ </layer>
+ <layer name="collision" width="40" height="41" visible="0" opacity="0.7">
+  <data encoding="base64" compression="zlib">
+   eJzt0tEJwCAMBFAH6P5ruGKhUCiCck1ikjYXuB8R7yn2o7XOMAzDMMyVe6z2WbvG3rfrHjbpVPTNOlDLbuPqbPSddvmQc9H3sTZKei32oS7re2h76Kvhk97Hq+9PvtlEu1a2CKNmsvto1Dk9/yHijfbQR1+mZPc9jdGOr/oq5gRrQ/yl
+  </data>
+ </layer>
+ <objectgroup name="objects" width="40" height="41">
+  <object name="tplefthallway" type="teleport" x="304" y="624" width="32" height="32">
+   <properties>
+    <property name="sound" value="doormove6"/>
+    <property name="target" value="lefthallway"/>
+    <property name="x" value="39"/>
+    <property name="y" value="8"/>
+   </properties>
+  </object>
+  <object name="librarykey" type="object" x="320" y="160" width="16" height="16">
+   <properties>
+    <property name="func" value="mirrorhall_librarykey"/>
+    <property name="image" value="library_key.png"/>
+   </properties>
+  </object>
+  <object name="claire" type="object" x="304" y="208" width="32" height="32">
+   <properties>
+    <property name="func" value="mirrorhall_claire"/>
+    <property name="image" value="dead_claire.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="scripts" width="40" height="41">
+  <object name="murderscene" type="script" x="288" y="336" width="64" height="32">
+   <properties>
+    <property name="func" value="mirrorhall_murderscene"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
