@@ -17,13 +17,14 @@ import pygame
 # is introduced and every listener registered.
 # This class does not define an explicit main loop! Instead, the last line of this class
 # orders the TickController to start running and posting tick events, which causes the loop.
-class Main():
+class Main:
     # Run method called by run.py
     def run(self):
-        # Pygame sound mixer init
-        pygame.mixer.pre_init(22050, -16, 2, 2048)
         # Initialize pygame
         pygame.init()
+        # Pygame sound mixer init
+        pygame.mixer.pre_init(44100, -16, 2, 1024)
+        pygame.mixer.init()
         # Setup the event manager
         evManager = EventManager.EventManager()
         # Setup the input controller

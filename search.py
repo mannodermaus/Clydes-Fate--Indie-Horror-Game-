@@ -35,7 +35,7 @@ def count(root='', format="*", recurse=True):
     return files
 
 if __name__ == "__main__":
-    format = str(input("What do you want to look for? > ")).split()
+    format = str(eval(input("What do you want to look for? > "))).split()
     dict = count(os.getcwd(), format, True)
     cnt = 0
     for f in dict.keys():

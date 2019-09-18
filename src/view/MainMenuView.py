@@ -24,6 +24,9 @@ import time
 # in the main menu screen, and is held by the central view controller.
 # Implements:
 #   ViewInterface
+from src.utilities import required_shelve_files
+
+
 class MainMenuView(ViewInterface):
     # Constructor
     def __init__(self):
@@ -147,7 +150,7 @@ class MainMenuView(ViewInterface):
                 foundOne = True
                 if not (self.mouseover == i):
                     # Play the highlight sound & color that save
-                    self.ad.play(SOUND, "menu_hover", VOLUME_SOUND - 0.4)
+                    self._playSelectSound()
                     self.mouseover = i
         # If every item was checked and not a single collision occured,
         # check the back button text
@@ -155,10 +158,13 @@ class MainMenuView(ViewInterface):
             if self.menu_backbutton[1].collidepoint(pos):
                 if not (self.mouseover == self.menu_backbutton):
                     # Play the highlight sound & color that item red
-                    self.ad.play(SOUND, "menu_hover", VOLUME_SOUND - 0.4)
+                    self._playSelectSound()
                     self.mouseover = self.menu_backbutton
             else:
                 self.mouseover = None
+
+    def _playSelectSound(self):
+        self.ad.play(SOUND, "menu_hover", VOLUME_SOUND - 0.4)
     
     # Checks the collision of the given mouse position with any of the main menu items.
     # Parameter:
@@ -173,7 +179,7 @@ class MainMenuView(ViewInterface):
                 # If this item wasn't already highlighted, do it
                 if not (self.mouseover == b):
                     # Play the highlight sound & color that item red
-                    self.ad.play(SOUND, "menu_hover", VOLUME_SOUND - 0.4)
+                    self._playSelectSound()
                     self.mouseover = b
                     b.setColor(COLOR_TEXT_HIGHLIGHTED)
             else:
@@ -234,13 +240,12 @@ class MainMenuView(ViewInterface):
         x = 0
         y = 0
         # Validate these directories (check the files inside of them)
-        for direction in dirs:
+        for directory in dirs:
             delete = False
-            name = os.path.basename(direction)
-            path = os.path.join(direction, name)
-            # A valid save game shelf consists of three data files and a screen shot thumbnail
-            for ext in [".bak", ".dat", ".dir", ".png"]:
-                file = "%s%s" % (path, ext)
+            name = os.path.basename(directory)
+            path = os.path.join(directory, name)
+            
+            for file in required_shelve_files(path):
                 if not os.path.exists(file):
                     delete = True
                     break

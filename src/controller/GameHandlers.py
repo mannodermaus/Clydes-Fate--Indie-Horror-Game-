@@ -24,6 +24,7 @@ from src.utilities import set_shelf, get_savegame, set_global_overlays, \
     get_property, copy_to_dict
 import shelve
 
+
 # GameHandlers.
 # In this module, the handlers used by the Game object are defined.
 # They have been outsourced because the Game object got a bit large.
@@ -37,22 +38,23 @@ class GameHandler:
     #   gh  :   Game object reference, so that a handler may post events to the EventManager
     def __init__(self, gh):
         self.gh = gh
-        
+
     # Handle method. This does nothing, so a subclass has to implement event handling as necessary.
     # Parameter:
     #   event   :   The event posted by the EventManager, which was delegated to the
     #               game handler object to ... handle.
     def handle(self, event):
         pass
-        
+
+
 # Game Handler implementation for the main menu screen.
 class MainMenuGameHandler(GameHandler):
     # Constructor
     # Parameter:
     #   gh  :   Game object reference, so that a handler may post events to the EventManager
     def __init__(self, gh):
-        super(MainMenuGameHandler, self).__init__(gh)
-        
+        GameHandler.__init__(self, gh)
+
     # Handle method implementation.
     # This handler is particularly interested in MainMenuSelectionEvents,
     # because it is responsible for checking what was selected.
@@ -69,7 +71,7 @@ class MainMenuGameHandler(GameHandler):
         elif isinstance(event, NoSavesFoundEvent):
             # Delete the save folder again and output a "No loading blah" message
             GlobalServices.getTextRenderer().write("There are no saved games to be loaded.", 2, COLOR_RED)
-        
+
     # Outsourced handle method for a main menu selection
     # Parameter:
     #   vals    :   Tuple of two items. The first one corresponds to one of the constants
@@ -100,7 +102,7 @@ class MainMenuGameHandler(GameHandler):
             GlobalServices.getTextRenderer().write("Settings are not available yet :(", 2, COLOR_RED)
         elif val == MAIN_MENU_ITEM_QUIT:
             self.gh.evManager.post(QuitEvent())
-                
+
     # Initialize a new game
     # Parameter:
     #    name    :    The selected name for the playthrough entered by the user
@@ -118,7 +120,7 @@ class MainMenuGameHandler(GameHandler):
         self.gh.player.setPosition((240, 208))
         # Initialize the map loading of the first map
         self.gh.initMapLoading("bedroom")
-        
+
     # Initialize the loading of a previously saved game, catching errors
     # that may occur if the save game does not actually exist.
     # Parameter:
@@ -147,7 +149,8 @@ class MainMenuGameHandler(GameHandler):
         self.gh.initMapLoading(s['current_map'])
         # Finally, close the shelf again.
         s.close()
-        
+
+
 # Handler for the Game object that becomes active during the MapFactory's
 # loading process. Its only purpose basically is to handle an event that
 # indicates that the MapFactory is done loading, so... yeah, not the
@@ -157,8 +160,8 @@ class MapLoadingHandler(GameHandler):
     # Parameter:
     #   gh  :   Game object reference, so that a handler may post events to the EventManager
     def __init__(self, gh):
-        super(MapLoadingHandler, self).__init__(gh)
-    
+        GameHandler.__init__(self, gh)
+
     # Handle method implementation
     # Parameter:
     #   event   :   The event posted by the EventManager
@@ -177,7 +180,8 @@ class MapLoadingHandler(GameHandler):
             self.gh.currentmap.rendering_enabled = True
             self.gh.changeMap(self.gh.currentmap, None, False)
             GlobalServices.getTextRenderer().write("Couldn't load %s.tmx" % event.object, 4)
-        
+
+
 # Handler for the Game object's events during the running game.
 # This event is responsible for ordering the player to start or stop moving
 # when it recognizes TickEvents. It also orders other controllers to check
@@ -187,8 +191,8 @@ class RunningGameHandler(GameHandler):
     # Parameter:
     #   gh  :   Game object reference, so that a handler may post events to the EventManager
     def __init__(self, gh):
-        super(RunningGameHandler, self).__init__(gh)
-        
+        GameHandler.__init__(self, gh)
+
     # Handle method implementation.
     # Parameter:
     #   event   :   The event posted by the EventManager
@@ -273,15 +277,16 @@ class RunningGameHandler(GameHandler):
         # MainMenuSwitchRequestEvent: After the game is finished
         elif isinstance(event, MainMenuSwitchRequestEvent):
             self.gh.switchToMainMenu()
-            
+
+
 # Handler for the Game object's events for when the inventory is open.
 class InventoryGameHandler(GameHandler):
     # Constructor
     # Parameter:
     #   gh  :   Game object reference, so that a handler may post events to the EventManager
     def __init__(self, gh):
-        super(InventoryGameHandler, self).__init__(gh)
-        
+        GameHandler.__init__(self, gh)
+
     # Handle method implementation.
     # Parameter:
     #    event    :    The event posted by the EventManager
@@ -300,15 +305,16 @@ class InventoryGameHandler(GameHandler):
         elif isinstance(event, MouseMotionEvent):
             item = self.gh.player.inventory.checkForItemHighlight(event.object)
             self.gh.evManager.post(InventoryItemHighlightedEvent(item))
-            
+
+
 # Handler for the Game object's events for when the game menu is open
 class GameMenuGameHandler(GameHandler):
     # Constructor
     # Parameter:
     #   gh  :   Game object reference, so that a handler may post events to the EventManager
     def __init__(self, gh):
-        super(GameMenuGameHandler, self).__init__(gh)
-        
+        GameHandler.__init__(self, gh)
+
     # Handle method implementation.
     # Parameter:
     #    event    :    The event posted by the EventManager

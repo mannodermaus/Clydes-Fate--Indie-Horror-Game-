@@ -1,3 +1,4 @@
+# coding=utf-8
 # CS 386
 # Introduction to Game Design and Production
 # Assignment 6: Final Game Project

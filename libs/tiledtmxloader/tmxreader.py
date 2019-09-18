@@ -46,8 +46,8 @@ __author__ = 'DR0ID @ 2009-2011'
 import sys
 from xml.dom import minidom, Node
 try:
-    import StringIO
-    from StringIO import StringIO
+    import io
+    from io import StringIO
 except:
     from io import StringIO
 import os.path

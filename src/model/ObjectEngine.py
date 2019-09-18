@@ -30,7 +30,7 @@ from src.view import OverlayFactory
 class ObjectStorage(Storage):
     # Constructor
     def __init__(self):
-        super(ObjectStorage, self).__init__()
+        Storage.__init__(self)
         
     # Global overlays initialization method.
     # There is a global list of overlays that are applied to every map

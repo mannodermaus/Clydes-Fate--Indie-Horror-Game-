@@ -5,7 +5,6 @@
 # mschnelle@csu.fullerton.edu
 
 import os
-import pygame._view
 import pygame
 
 # constants.

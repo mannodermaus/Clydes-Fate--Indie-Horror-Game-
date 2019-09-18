@@ -13,6 +13,7 @@ from src.model.MapProperties import MapProperties, SCRIPT, OBJECT, \
     TELEPORTSCRIPT, TELEPORTOBJECT
 import math
 import os
+import platform
 import pygame
 
 # utilities.
@@ -21,7 +22,7 @@ import pygame
 # between tile and pixel units, creation of complex
 # sprite animation dictionaries, distance measuring and
 # directional calculations.
-    
+
 # Maps a given direction list to the corresponding string.
 # Parameter:
 #   dir :   Directional vector
@@ -67,7 +68,7 @@ def string_to_direction(dirs):
     elif dirs == "right-down":
         ret = [1,1]
     return ret
-    
+
 # Measures the distance between two points in whole-number pixel units
 # Parameters:
 #   p   :   Point 1
@@ -83,7 +84,7 @@ def measure_distance(p, q):
 #    o    :    The new Overlay to be added
 def add_global_overlay(o):
     GLOBAL_OVERLAYS.append(o)
-    
+
 # Removes an overlay from the list of global overlays.
 # This method is safe because it checks if this overlay
 # exists in the list before attempting to remove it.
@@ -92,7 +93,7 @@ def add_global_overlay(o):
 def remove_global_overlay(o):
     if o in GLOBAL_OVERLAYS:
         GLOBAL_OVERLAYS.remove(o)
-        
+
 # Gets the list of global overlays
 # Returns:
 #    The list of global overlays
@@ -106,7 +107,7 @@ def set_global_overlays(olist):
     for _ in range(len(GLOBAL_OVERLAYS)):
         GLOBAL_OVERLAYS.remove(GLOBAL_OVERLAYS[0])
     GLOBAL_OVERLAYS.extend(olist)
-    
+
 # Sets the value of a property to the given boolean value.
 # Parameters:
 #    key    :    The property to be changed
@@ -114,7 +115,7 @@ def set_global_overlays(olist):
 def set_property(key, value):
     if key in GLOBAL_PROPERTIES.keys() and type(value) == bool:
         GLOBAL_PROPERTIES[key] = value
-            
+
 # Gets the value of a property.
 # Parameter:
 #    key    :    The property to retrieve the value from
@@ -125,7 +126,7 @@ def get_property(key):
         return GLOBAL_PROPERTIES[key]
     except KeyError:
         return None
-        
+
 # Sets the shelf to the one with the given name
 # Parameter:
 #    name    :    The file name of the shelf to be created
@@ -133,7 +134,7 @@ def set_shelf(name):
     dirname = os.path.join(PATH_SAVES, name)
     # Create a new folder inside of the "saves" dir, if there is no such savegame
     if not os.path.isdir(dirname):
-        os.mkdir(dirname)
+        os.makedirs(dirname)
     CURRENT_SHELF_FILENAME[0] = os.path.join(dirname, name)
 
 # Gets the dict for the current save game
@@ -145,7 +146,7 @@ def get_savegame():
 # Resets the dict for the current save game
 def reset_savegame():
     CURRENT_SHELF[0] = {}
-    
+
 # Convert the given animations out of a sprite sheet image. This method
 # takes a huge number of parameters that define the properties of the sprite sheet in detail.
 # Parameters:
@@ -204,7 +205,7 @@ def spritesheet_to_animations(filename, offset, ssize, data, duration):
 def center_image(surface):
     size = surface.get_rect().size
     return (SCREEN_WIDTH/2 - size[0]/2, SCREEN_HEIGHT/2 - size[1]/2)
-    
+
 # Returns the number string of the given key index according to pygame's constants.
 # Parameter:
 #    key    :    Pressed key's ASCII code
@@ -212,7 +213,7 @@ def center_image(surface):
 #    Modified version of that keycode
 def force_number(key):
     return str(key - 48)
-    
+
 # Copies the key/value pairs of a python dict to the shelf
 # Parameter:
 #   s       :   Dict object to get the stuff from
@@ -223,7 +224,7 @@ def copy_to_shelve(s, s2, f=[]):
         if not k in f:
             tempval = s[k]
             s2[k] = tempval
-      
+
 # Copies the key/value pairs of a shelve to a python dict
 # Parameter:
 #   s       :   shelve object to get the stuff from
@@ -235,7 +236,7 @@ def copy_to_dict(s, s2, f=[]):
         if not tempkey in f:
             tempval = s[tempkey]
             s2[tempkey] = tempval
-      
+
 # Create a new Sprite object from a file name.
 # Parameters:
 #   folder  :   The folder containing the image file (usually src.constants.PATH_GRAPHICS_SPRITES)
@@ -257,7 +258,7 @@ def update_persistent_map_properties(m, shelf):
     properties = MapProperties(m)
     dic[name] = properties
     shelf['saved_maps'] = dic
-    
+
 # Adds an object to a map. Note that objects
 # may only be removed from previously visited maps.
 # Therefore, if no MapProperties entry exists for
@@ -282,7 +283,7 @@ def add_to_map(shelf, constant, mapname, name, rect, callback, imagefile=None, b
     from src.model.Script import Script, TeleportScript
     from src.model.Clickable import Clickable, TeleportClickable
     from src.model import MapFactory
-    
+
     mapref = MapFactory.getMap(mapname)
     image = None
     if constant == SCRIPT:
@@ -297,15 +298,15 @@ def add_to_map(shelf, constant, mapname, name, rect, callback, imagefile=None, b
             ObjectClass = Clickable
         elif constant == TELEPORTOBJECT:
             ObjectClass = TeleportClickable
-    
+
     c = ObjectClass(name, rect, callback, mapref, image, imagefile)
-    
+
     if constant == OBJECT:
         if block:
             c.setBlocked(block)
-            
+
     add_object_to_map_properties(shelf, mapname, constant, c)
-    
+
 # Adds an object to the persistent MapProperties.
 # This way is the correct way to add an object to another map when
 # in an interaction method.
@@ -323,8 +324,8 @@ def add_object_to_map_properties(shelf, key, constant, obj):
     from src.model import MapFactory
     m = MapFactory.getMap(key)
     if m is not None:
-        m.addObject(constant, obj)    
-        
+        m.addObject(constant, obj)
+
 # Removes an object from the persistent MapProperties.
 # Parameters:
 #    shelf       :    Shelf to be used for persistent access
@@ -339,7 +340,7 @@ def remove_object_from_map_properties(shelf, key, constant, obj, keepblocked=Fal
     m = MapFactory.getMap(key)
     if m is not None:
         m.removeObject(obj, keepblocked)
-        
+
     # Remove it from the map properties
     if key in dic:
         dic[key].remove(constant, obj)
@@ -383,20 +384,20 @@ def update_object_in_map_properties(shelf, mname, obj):
 def remove_from_map(shelf, constant, mapname, name):
     # Local import
     from src.model import MapFactory
-    
+
     # This part is relevant when a script removes an object
     # on the map where it is on itself.
     m = MapFactory.getMap(mapname)
     if m is not None:
         ref = m.getObjectByName(name)
         m.removeObject(ref)
-        
+
     # Delete the entry in the map's MapProperties
     dic = shelf['saved_maps']
     if mapname in dic:
         dic[mapname].remove(constant, name)
         shelf['saved_maps'] = dic
-        
+
 # This method calculates the general direction from pos1 to pos2.
 # The return values are expressed as a two-item list depicting
 # the direction, e.g. [1,0] = RIGHT, [0,-1] = UP and so on.
@@ -414,7 +415,7 @@ def get_direction_from_point_to_point(pos1, pos2):
     for direction in DIRS:
         if rounded in DIRDICT[direction]:
             return direction
-        
+
 # Converts a position in Tiled-Tile-Coordinates to pixel coordinates
 # Parameters:
 #    tilepoint    :    Two-item point of tile coordinates
@@ -425,3 +426,22 @@ def conv_tile_pixel(tilepoint, mapref):
     tw = mapref._cLayer.tilewidth
     th = mapref._cLayer.tileheight
     return (tilepoint[0] * tw, tilepoint[1] * th)
+
+# Returns a list of files expected to be present
+# in order to call the shelve with the provided name "valid".
+# The list of files depends on the OS of the user.
+# Parameters:
+#   name        :       Base name of the shelve to check
+# Returns:
+#   A list of strings representing the file names expected to be present for a valid shelve
+def required_shelve_files(name):
+    os_name = platform.system()
+    if os_name == "Windows":
+        ext_list = [".bak", ".dat", ".dir", ".png"]
+    elif os_name == "Darwin":
+        ext_list = ["", ".png"]
+    else:
+        print("Warning: Assuming shelve files without knowing correct extensions")
+        ext_list = ["", ".png"]
+
+    return map(lambda x: "%s%s" % (name, x), ext_list)

@@ -30,7 +30,7 @@ from src.view import OverlayFactory
 class ScriptsStorage(Storage):
     # Constructor
     def __init__(self):
-        super(ScriptsStorage, self).__init__()
+        Storage.__init__(self)
         self.teleport_in_progress = False
         
     # Righthallway.tmx
