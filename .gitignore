@@ -3,3 +3,12 @@ saves/
 
 # MacOS
 .DS_STORE
+
+# IDEA
+.idea/
+
+# Compiled Python scripts
+*.pyc
+
+# Virtual environment
+env/

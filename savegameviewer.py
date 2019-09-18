@@ -6,13 +6,13 @@ if __name__ == "__main__":
         
     print("Available save games:")
     for i in range(len(saves)):
-        dirs = saves[i].split("\\")
+        dirs = saves[i].split(os.path.sep)
         saves[i] = os.path.join(saves[i], dirs[-1])
         print("[%d] %s" % (i, dirs[-1]))
     done = False
     while not done:
         try:
-            index = int(input("Which save game should be opened? > "))
+            index = int(eval(input("Which save game should be opened? > ")))
             if index >= len(saves) or index < 0:
                 print("The integer is out of bounds.")
             else:

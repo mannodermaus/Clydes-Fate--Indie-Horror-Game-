@@ -54,7 +54,7 @@ class View(Listener, ViewInterface):
         self.state = None
         # Hold a Gameview instance
         self.gameview = None
-        
+
     # Listener interface implementation
     # Parameter:
     #   event   :   The event that the event manager has received
@@ -63,7 +63,7 @@ class View(Listener, ViewInterface):
             self.changeHandler(event.object)
         else:
             self.handler.handle(event)
-            
+
     # Handler change method. Any time the view controller is notified of a game state change event,
     # this method changes the controller's handler reference. This controller also changes its
     # currently displayed view to whatever the new game state requires. If the Game object tells
@@ -98,7 +98,7 @@ class View(Listener, ViewInterface):
             self.currentView.setInventoryDisplay(True)
         # Keep track of the new state
         self.state = state
-            
+
     # ViewInterface implementation
     # Parameter:
     #   screen  :   The surface to be drawn onto
@@ -112,24 +112,24 @@ class View(Listener, ViewInterface):
         self.textRenderer.render()
         # Make the rendered image visible to the user
         pygame.display.flip()
-        
+
     # This method toggles the pygame display
     # between Windowed and Fullscreen display
     def toggleFullscreen(self):
         # Flip the switch
         self.fullscreen = not self.fullscreen
-        
+
         # Preserve old contents of the screen
         content = self.screen.convert()
-        
+
         if self.fullscreen:
             self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN|pygame.HWSURFACE)
         else:
             self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        
+
         # Blit old content to the new surface
         self.screen.blit(content, (0,0))
-  
+
 # Base class for view handlers.
 # Adready handles tick and quit events, so these don't have to be implemented in subclasses.
 # (Still, implementing classes need not forget to call super.handle() in order for this to happen!)
@@ -139,7 +139,7 @@ class ViewHandler:
     #   v   :   View reference, so that the view handler may access the event manager
     def __init__(self, v):
         self.v = v
-        
+
     # Handler base method.
     # Parameter:
     #   event   :   The event that was registered by the event manager
@@ -153,7 +153,7 @@ class ViewHandler:
         # QuitEvent: Delete pending text messages in the text rendering module
         elif isinstance(event, QuitEvent):
             self.v.textRenderer.deleteAll()
-        
+
 # Main menu handler for the view controller.
 # This handler handles input events from the input controller
 # in relation to the main menu screen. Thus, it orders the MainMenuView
@@ -164,12 +164,12 @@ class MainMenuViewHandler(ViewHandler):
     # Parameter:
     #   v   :   View reference
     def __init__(self, v):
-        super(MainMenuViewHandler, self).__init__(v)
+        ViewHandler.__init__(self, v)
         # Load menu status
         self.loadmenu_open = False
         # New game menu status
         self.newgame_open = False
-        
+
     # Handler implementation for main menu context.
     # Parameter:
     #   event   :   The event that was registered by the event manager
@@ -185,7 +185,7 @@ class MainMenuViewHandler(ViewHandler):
             l = self.v.currentView.checkClick(event.object)
             # If the return value is not none, he actually has. Therefore, post the selection event!
             if l is not None:
-                
+
                 self.v.evManager.post(MainMenuSelectionEvent(l))
         # Load menu toggle event
         elif isinstance(event, LoadMenuToggleEvent):
@@ -222,14 +222,14 @@ class MainMenuViewHandler(ViewHandler):
                 self.v.evManager.post(MainMenuSelectionEvent(savegame))
         elif isinstance(event, NoSavesFoundEvent):
             self.loadmenu_open = False
-        
+
 
 # Map loading handler for the view controller.
 # This handler is not used at the moment
 class MapLoadingViewHandler(ViewHandler):
     def __init__(self, v):
-        super(MapLoadingViewHandler, self).__init__(v)
-    
+        ViewHandler.__init__(self, v)
+
     # Handler implementation for map loading context.
     # Parameter:
     #   event   :   The event that was registered by the event manager
@@ -239,7 +239,7 @@ class MapLoadingViewHandler(ViewHandler):
             # Get map name and display it...
             name = event.object
             self.v.currentView.setName(name)
-        
+
 # Game handler for the view controller.
 # This handler is responsible for notifying the current GameView
 # when a map change request has been made, or an object in the map
@@ -249,8 +249,8 @@ class GameViewHandler(ViewHandler):
     # Parameter:
     #   v   :   View reference
     def __init__(self, v):
-        super(GameViewHandler, self).__init__(v)
-        
+        ViewHandler.__init__(self, v)
+
     # Handler implementation for main game context.
     # Parameter:
     #   event   :   The event that was registered by the event manager
@@ -276,8 +276,8 @@ class GameViewHandler(ViewHandler):
         # it in the current save game's folder
         elif isinstance(event, SaveEvent):
             self.v.currentView.saveScreenshot()
-            
-                
+
+
 # Inventory handler for the view controller.
 # This handler is responsible for determining mouse movement and clicks
 # when the inventory box is opened.
@@ -286,9 +286,9 @@ class InventoryViewHandler(ViewHandler):
     # Parameter:
     #   v   :   View reference
     def __init__(self, v):
-        super(InventoryViewHandler, self).__init__(v)
+        ViewHandler.__init__(self, v)
         self.itemtext = None
-        
+
     # Handler implementation for main game context.
     # Parameter:
     #   event   :   The event that was registered by the event manager
@@ -308,8 +308,8 @@ class InventoryViewHandler(ViewHandler):
                     self.itemtext.delete()
                     self.itemtext = None
         elif isinstance(event, MouseClickEvent):
-            pass       
-                
+            pass
+
 # Game menu handler for the view controller.
 # This handler is responsible for determining mouse movement and clicks
 # when the game menu is opened.
@@ -318,9 +318,9 @@ class GameMenuViewHandler(ViewHandler):
     # Parameter:
     #   v   :   View reference
     def __init__(self, v):
-        super(GameMenuViewHandler, self).__init__(v)
+        ViewHandler.__init__(self, v)
         self.selected = None
-        
+
     # Handler implementation for main game context.
     # Parameter:
     #   event   :   The event that was registered by the event manager

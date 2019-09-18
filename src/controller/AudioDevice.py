@@ -50,13 +50,15 @@ class AudioDevice:
         if not key in self._sounds:
             # Go through the allowed extensions for sound files.
             for e in self._soundexts:
+                sound_path = os.path.join(PATH_SOUNDS, "%s%s" % (key, e))
                 try:
                     # Try loading this sound with this extension
-                    self._sounds[key] = pygame.mixer.Sound(\
-                                        os.path.join(PATH_SOUNDS, "%s%s" % (key, e)))
-                    # If that worked, we have our match
-                    match = True
-                except pygame.error:
+                    if os.path.exists(sound_path):
+                        self._sounds[key] = pygame.mixer.Sound(sound_path)
+                        # If that worked, we have our match
+                        match = True
+                except pygame.error as e:
+                    print("Cannot load '{}': {}".format(sound_path, e))
                     # If this sound couldn't be loaded with this extension,
                     # it's probably because that wasn't the right extension.
                     # Just keep on going and try other extensions
@@ -76,11 +78,14 @@ class AudioDevice:
     def loadMusic(self, key):
         match = False
         for e in self._soundexts:
+            music_path = os.path.join(PATH_MUSIC, "%s%s" % (key, e))
             try:
-                # Try loading this music lwith this extension
-                pygame.mixer.music.load(os.path.join(PATH_MUSIC, "%s%s" % (key, e)))
-                match = True
-            except pygame.error:
+                # Try loading this music with this extension
+                if os.path.exists(music_path):
+                    pygame.mixer.music.load(music_path)
+                    match = True
+            except pygame.error as e:
+                print("Cannot load '{}': {}".format(music_path, e))
                 # If this sound couldn't be loaded with this extension,
                 # it's probably because that wasn't the right extension.
                 # Just keep on going and try other extensions
@@ -124,8 +129,8 @@ class AudioDevice:
                     if not (MUSIC, key) in self._soundlist:
                         self._soundlist.append((MUSIC, key, volume, loop, fadein))
                     self._musicPlaying = True
-                except pygame.error:
-                    self._logger.log("Music '%s' can't be loaded." % key)
+                except pygame.error as e:
+                    self._logger.log("Music '{}' can't be loaded: {}".format(key, e))
                 
     # Stops the given audio file and removes it from the list
     # of currently playing sound effects.

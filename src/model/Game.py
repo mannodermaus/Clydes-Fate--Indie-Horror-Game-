@@ -81,6 +81,9 @@ class Game(Listener):
     #   name    :   The name of the save game to be deleted
     def deleteSavegame(self, name):
         path = os.path.join(PATH_SAVES, name)
+        if not os.path.exists(path):
+            return
+
         name = name.lower()
         dirs = [d.lower() for d in os.listdir(PATH_SAVES)]
         #print("delete %s from list" % name)
